@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vitogaz Madagascar — Actualités et communiqués institutionnels. Suivez l'actualité du leader de la distribution de gaz à Madagascar." />
+  <title>Actualités — Vitogaz Madagascar</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'><rect width='42' height='42' rx='8' fill='%230A1F44'/><circle cx='21' cy='21' r='8' fill='%23E8820C'/></svg>" />
+  <style>
+    .news-card {
+      background:white;border-radius:var(--radius-xl);overflow:hidden;
+      box-shadow:var(--shadow-card);border:1px solid var(--color-gray-100);
+      transition:all 0.25s ease;display:flex;flex-direction:column;
+    }
+    .news-card:hover { transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:transparent; }
+    .news-card__img {
+      height:200px;background:linear-gradient(135deg,var(--color-navy),var(--color-navy-light));
+      display:flex;align-items:center;justify-content:center;font-size:3rem;
+    }
+    .news-card__body { padding:2rem;flex:1;display:flex;flex-direction:column; }
+    .news-card__meta { display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem; }
+    .news-card__date { font-size:0.75rem;color:var(--color-text-muted);font-weight:500; }
+    .news-card__title { font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;line-height:1.35;margin-bottom:0.875rem; }
+    .news-card__excerpt { font-size:0.9rem;color:var(--color-text-secondary);line-height:1.65;margin-bottom:1.5rem;flex:1; }
+    .news-card__link { font-family:var(--font-display);font-size:0.8125rem;font-weight:700;color:var(--color-orange);text-transform:uppercase;letter-spacing:0.06em; }
+    .news-card__link:hover { text-decoration:underline; }
+
+    .news-featured {
+      display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--radius-2xl);overflow:hidden;
+      box-shadow:var(--shadow-lg);margin-bottom:4rem;
+    }
+    .news-featured__img {
+      background:linear-gradient(135deg,#0A1F44,#132952);
+      display:flex;align-items:center;justify-content:center;font-size:5rem;
+      min-height:400px;
+    }
+    .news-featured__body { background:white;padding:3rem; }
+    .news-featured__category { font-family:var(--font-display);font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-orange);margin-bottom:0.75rem; }
+    .news-featured__title { font-family:var(--font-display);font-weight:800;color:var(--color-navy);font-size:1.625rem;line-height:1.25;margin-bottom:1.25rem; }
+    .news-featured__text { font-size:1rem;color:var(--color-text-secondary);line-height:1.75;margin-bottom:2rem; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><div class="nav__logo-svg"></div><div><div class="nav__logo-text">Vito<span>gaz</span></div><span class="nav__logo-sub">Madagascar</span></div></a>
+      <ul class="nav__links">
+        <li><a href="groupe.html" class="nav__link">Groupe</a></li>
+        <li><a href="solutions.html" class="nav__link">Solutions BtoB</a></li>
+        <li><a href="securite.html" class="nav__link">Sécurité</a></li>
+        <li><a href="logistique.html" class="nav__link">Logistique</a></li>
+        <li><a href="rse.html" class="nav__link">RSE</a></li>
+        <li><a href="actualites.html" class="nav__link" style="color:var(--color-orange)">Actualités</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Demander un devis</a>
+      <button class="nav__menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile" role="dialog" aria-modal="true">
+      <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+      <a href="index.html" class="nav__mobile-link">Accueil</a>
+      <a href="actualites.html" class="nav__mobile-link">Actualités</a>
+      <a href="contact.html" class="nav__mobile-cta">Demander un devis</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="page-hero__content">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a><span class="breadcrumb-sep">›</span><span aria-current="page">Actualités</span>
+      </nav>
+      <p class="text-eyebrow text-eyebrow--white">Communiqués & analyses</p>
+      <h1 id="page-title" class="page-hero__title">Actualités Vitogaz</h1>
+      <p class="page-hero__subtitle">Suivez les dernières nouvelles du groupe, les évolutions du secteur énergétique malagasy et nos annonces institutionnelles.</p>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION — À la une
+       ===================================================================== -->
+  <section class="section bg-white" aria-labelledby="une-heading">
+    <div class="container">
+      <p class="text-eyebrow" style="margin-bottom:1.5rem;">À la une</p>
+
+      <!-- Featured article -->
+      <div class="news-featured animate-on-scroll" role="article" aria-labelledby="news-featured-title">
+        <div class="news-featured__img" role="img" aria-label="Inauguration terminal Toamasina" aria-hidden="true">⚡</div>
+        <div class="news-featured__body">
+          <div class="news-featured__category">Infrastructures</div>
+          <h2 id="news-featured-title" class="news-featured__title">Vitogaz inaugure un nouveau terminal de stockage à Toamasina avec une capacité portée à 8 000 tonnes.</h2>
+          <p class="news-featured__text">
+            Après 18 mois de travaux et un investissement de 6,4 millions d'euros, Vitogaz Madagascar a inauguré ce mois-ci son terminal de stockage étendu au port de Toamasina. Cette infrastructure, désormais la plus grande de sa catégorie à Madagascar, permet d'augmenter significativement les capacités d'importation et de réduire les délais d'approvisionnement pour l'ensemble du réseau est de l'île.
+          </p>
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+            <div style="font-size:0.8125rem;color:var(--color-text-muted);">
+              <span>15 novembre 2024</span>
+              <span style="margin:0 0.5rem;">·</span>
+              <span>Communiqué de presse</span>
+            </div>
+            <a href="#" class="btn btn--navy">Lire le communiqué</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION — Dernières actualités
+       ===================================================================== -->
+  <section class="section bg-gray" aria-labelledby="actu-heading">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem;">
+        <h2 id="actu-heading" class="heading-md">Derniers articles</h2>
+        <!-- Filtres -->
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;" role="list" aria-label="Filtres">
+          <button style="padding:0.5rem 1.25rem;border-radius:100px;font-family:var(--font-display);font-size:0.75rem;font-weight:700;background:var(--color-navy);color:white;border:none;cursor:pointer;" aria-pressed="true">Tout</button>
+          <button style="padding:0.5rem 1.25rem;border-radius:100px;font-family:var(--font-display);font-size:0.75rem;font-weight:700;background:white;color:var(--color-navy);border:1px solid var(--color-gray-200);cursor:pointer;" aria-pressed="false">Institutionnel</button>
+          <button style="padding:0.5rem 1.25rem;border-radius:100px;font-family:var(--font-display);font-size:0.75rem;font-weight:700;background:white;color:var(--color-navy);border:1px solid var(--color-gray-200);cursor:pointer;" aria-pressed="false">Sécurité</button>
+          <button style="padding:0.5rem 1.25rem;border-radius:100px;font-family:var(--font-display);font-size:0.75rem;font-weight:700;background:white;color:var(--color-navy);border:1px solid var(--color-gray-200);cursor:pointer;" aria-pressed="false">RSE</button>
+          <button style="padding:0.5rem 1.25rem;border-radius:100px;font-family:var(--font-display);font-size:0.75rem;font-weight:700;background:white;color:var(--color-navy);border:1px solid var(--color-gray-200);cursor:pointer;" aria-pressed="false">Marchés</button>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.75rem;" role="list">
+
+        <article class="news-card animate-on-scroll" role="listitem">
+          <div class="news-card__img" aria-hidden="true">📊</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge--orange">Marchés</span>
+              <time class="news-card__date" datetime="2024-10-28">28 octobre 2024</time>
+            </div>
+            <h3 class="news-card__title">Résultats semestriels 2024 : croissance de 14,2% du chiffre d'affaires consolidé</h3>
+            <p class="news-card__excerpt">Vitogaz Madagascar publie ses résultats du premier semestre 2024, marqués par une croissance solide portée par le segment industriel et l'expansion géographique dans le Nord de l'île.</p>
+            <a href="#" class="news-card__link">Lire l'article →</a>
+          </div>
+        </article>
+
+        <article class="news-card animate-on-scroll animate-delay-1" role="listitem">
+          <div class="news-card__img" aria-hidden="true">🔒</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge--navy">Sécurité</span>
+              <time class="news-card__date" datetime="2024-10-10">10 octobre 2024</time>
+            </div>
+            <h3 class="news-card__title">Renouvellement de la certification ISO 45001 : bilan d'audit sans réserve</h3>
+            <p class="news-card__excerpt">Bureau Veritas a procédé au renouvellement de notre certification ISO 45001 avec un bilan d'audit sans réserve pour la troisième année consécutive. Un résultat qui récompense l'engagement quotidien de nos équipes HSE.</p>
+            <a href="#" class="news-card__link">Lire l'article →</a>
+          </div>
+        </article>
+
+        <article class="news-card animate-on-scroll animate-delay-2" role="listitem">
+          <div class="news-card__img" aria-hidden="true">🤝</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge--orange">Partenariats</span>
+              <time class="news-card__date" datetime="2024-09-15">15 septembre 2024</time>
+            </div>
+            <h3 class="news-card__title">Vitogaz signe un accord-cadre de fourniture avec le Groupe Rajoelina Hôtels & Resorts</h3>
+            <p class="news-card__excerpt">Un contrat pluriannuel de fourniture en gaz pour les 12 établissements du Groupe Rajoelina Hôtels & Resorts à Madagascar. Un partenariat stratégique qui renforce notre présence dans le secteur hôtelier premium.</p>
+            <a href="#" class="news-card__link">Lire l'article →</a>
+          </div>
+        </article>
+
+        <article class="news-card animate-on-scroll" role="listitem">
+          <div class="news-card__img" aria-hidden="true">🌿</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge--orange">RSE</span>
+              <time class="news-card__date" datetime="2024-08-22">22 août 2024</time>
+            </div>
+            <h3 class="news-card__title">Publication du Rapport ESG 2023 : nos engagements mesurés et audités</h3>
+            <p class="news-card__excerpt">Vitogaz Madagascar publie son rapport ESG annuel pour l'exercice 2023. Indicateurs environnementaux, sociaux et de gouvernance : une transparence totale sur nos performances et nos engagements.</p>
+            <a href="#" class="news-card__link">Lire l'article →</a>
+          </div>
+        </article>
+
+        <article class="news-card animate-on-scroll animate-delay-1" role="listitem">
+          <div class="news-card__img" aria-hidden="true">🎓</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge--navy">Institutionnel</span>
+              <time class="news-card__date" datetime="2024-07-08">8 juillet 2024</time>
+            </div>
+            <h3 class="news-card__title">École des Métiers du Gaz : 60 techniciens certifiés lors de la 3ème promotion</h3>
+            <p class="news-card__excerpt">La 3ème promotion de l'École des Métiers du Gaz, programme de formation technique en partenariat avec l'ENAM, a remis ses diplômes à 60 nouveaux techniciens spécialisés gaz, dont 18 femmes.</p>
+            <a href="#" class="news-card__link">Lire l'article →</a>
+          </div>
+        </article>
+
+        <article class="news-card animate-on-scroll animate-delay-2" role="listitem">
+          <div class="news-card__img" aria-hidden="true">📡</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge--orange">Innovation</span>
+              <time class="news-card__date" datetime="2024-06-14">14 juin 2024</time>
+            </div>
+            <h3 class="news-card__title">Lancement du portail client BtoB : suivi en temps réel des commandes et consommations</h3>
+            <p class="news-card__excerpt">Vitogaz déploie son nouveau portail client digital permettant aux entreprises partenaires de suivre leurs commandes, gérer leurs livraisons et accéder à leur historique de consommation en temps réel.</p>
+            <a href="#" class="news-card__link">Lire l'article →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center;margin-top:3rem;" class="animate-on-scroll">
+        <button class="btn btn--outline-navy btn--lg" aria-label="Charger plus d'articles">Charger plus d'articles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section style="background:var(--color-navy);padding:4rem 0;" aria-labelledby="newsletter-heading">
+    <div class="container" style="max-width:640px;">
+      <div style="text-align:center;">
+        <h2 id="newsletter-heading" class="heading-lg text-white" style="margin-bottom:0.75rem;">Restez informé.</h2>
+        <p style="color:rgba(255,255,255,0.65);margin-bottom:2rem;">Recevez nos communiqués institutionnels, analyses sectorielles et actualités importantes directement dans votre boîte professionnelle.</p>
+        <form style="display:flex;gap:0.75rem;max-width:480px;margin:0 auto;" aria-label="Inscription newsletter" novalidate>
+          <label for="newsletter-email" class="sr-only">Adresse e-mail professionnelle</label>
+          <input type="email" id="newsletter-email" placeholder="votre@entreprise.mg" style="flex:1;padding:1rem 1.25rem;border-radius:var(--radius-md);border:none;font-family:var(--font-body);font-size:1rem;" autocomplete="email" required />
+          <button type="submit" class="btn btn--primary" aria-label="S'inscrire à la newsletter">S'abonner</button>
+        </form>
+        <p style="font-size:0.75rem;color:rgba(255,255,255,0.3);margin-top:1rem;">Désabonnement possible à tout moment. Données non partagées.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top"><div class="container"><div class="footer__grid">
+      <div><div class="footer__brand-logo">Vito<span>gaz</span> Madagascar</div><p class="footer__brand-desc">Leader de la distribution de gaz à Madagascar depuis 2003.</p></div>
+      <div><div class="footer__nav-title">Groupe</div><ul class="footer__nav-list"><li><a href="groupe.html" class="footer__nav-link">Notre histoire</a></li><li><a href="rse.html" class="footer__nav-link">RSE & ESG</a></li></ul></div>
+      <div><div class="footer__nav-title">Solutions</div><ul class="footer__nav-list"><li><a href="solutions.html" class="footer__nav-link">Nos solutions</a></li><li><a href="securite.html" class="footer__nav-link">Sécurité</a></li></ul></div>
+      <div><div class="footer__nav-title">Contact</div><ul class="footer__nav-list"><li><a href="contact.html" class="footer__nav-link">Nous contacter</a></li><li><a href="carrieres.html" class="footer__nav-link">Carrières</a></li></ul></div>
+    </div></div></div>
+    <div class="container"><div class="footer__bottom"><p class="footer__copyright">&copy; <span id="footer-year">2024</span> Vitogaz Madagascar.</p><nav class="footer__legal"><a href="#" class="footer__legal-link">Mentions légales</a></nav></div></div>
+  </footer>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

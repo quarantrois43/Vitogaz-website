@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vitogaz Madagascar — RSE & ESG. Notre engagement pour la transition énergétique, le développement local et la gouvernance éthique à Madagascar." />
+  <title>RSE & ESG — Vitogaz Madagascar</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'><rect width='42' height='42' rx='8' fill='%230A1F44'/><circle cx='21' cy='21' r='8' fill='%23E8820C'/></svg>" />
+  <style>
+    .esg-pillar {
+      border-radius:var(--radius-2xl);padding:3rem;
+      position:relative;overflow:hidden;
+    }
+    .esg-pillar--env { background:linear-gradient(135deg,#064e3b,#065f46); }
+    .esg-pillar--soc { background:linear-gradient(135deg,#1e3a5f,#0A1F44); }
+    .esg-pillar--gov { background:linear-gradient(135deg,#44230b,#78350f); }
+    .esg-pillar__icon { font-size:3rem;margin-bottom:1.5rem;display:block; }
+    .esg-pillar__title { font-family:var(--font-display);font-weight:800;color:white;font-size:1.5rem;margin-bottom:1rem; }
+    .esg-pillar__text { color:rgba(255,255,255,0.75);line-height:1.75;font-size:0.9375rem;margin-bottom:1.5rem; }
+    .esg-pillar__kpi { display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1); }
+    .esg-kpi { text-align:center; }
+    .esg-kpi__val { font-family:var(--font-display);font-weight:800;font-size:1.75rem;color:white; }
+    .esg-kpi__label { font-size:0.6875rem;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.08em; }
+    .sdg-badge {
+      width:52px;height:52px;border-radius:var(--radius-lg);
+      display:flex;align-items:center;justify-content:center;
+      font-family:var(--font-display);font-weight:800;color:white;font-size:0.875rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><div class="nav__logo-svg"></div><div><div class="nav__logo-text">Vito<span>gaz</span></div><span class="nav__logo-sub">Madagascar</span></div></a>
+      <ul class="nav__links">
+        <li><a href="groupe.html" class="nav__link">Groupe</a></li>
+        <li><a href="solutions.html" class="nav__link">Solutions BtoB</a></li>
+        <li><a href="securite.html" class="nav__link">Sécurité</a></li>
+        <li><a href="logistique.html" class="nav__link">Logistique</a></li>
+        <li><a href="rse.html" class="nav__link" style="color:var(--color-orange)">RSE</a></li>
+        <li><a href="actualites.html" class="nav__link">Actualités</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Demander un devis</a>
+      <button class="nav__menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile" role="dialog" aria-modal="true">
+      <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+      <a href="index.html" class="nav__mobile-link">Accueil</a>
+      <a href="groupe.html" class="nav__mobile-link">Groupe</a>
+      <a href="solutions.html" class="nav__mobile-link">Solutions BtoB</a>
+      <a href="rse.html" class="nav__mobile-link">RSE & ESG</a>
+      <a href="contact.html" class="nav__mobile-cta">Demander un devis</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="page-hero__content">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a><span class="breadcrumb-sep">›</span><span aria-current="page">RSE & ESG</span>
+      </nav>
+      <p class="text-eyebrow text-eyebrow--white">Responsabilité d'entreprise</p>
+      <h1 id="page-title" class="page-hero__title">Notre Engagement RSE & ESG</h1>
+      <p class="page-hero__subtitle">Être un acteur économique responsable ne se limite pas à nos performances financières. C'est aussi la façon dont nous traitons nos collaborateurs, nos territoires et notre planète.</p>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION — Intro RSE
+       ===================================================================== -->
+  <section class="section bg-white" aria-labelledby="rse-intro-heading">
+    <div class="container">
+      <div style="max-width:800px;margin:0 auto;text-align:center;" class="animate-on-scroll">
+        <p class="text-eyebrow">Notre approche</p>
+        <h2 id="rse-intro-heading" class="heading-xl" style="margin-top:0.75rem;">
+          Concilier performance économique et impact positif.
+        </h2>
+        <p class="text-lead" style="margin-top:1.25rem;">
+          Chez Vitogaz Madagascar, nous avons fait le choix d'intégrer les enjeux ESG au cœur de notre stratégie d'entreprise — non comme une contrainte, mais comme un levier de compétitivité et de confiance pour nos parties prenantes.
+        </p>
+      </div>
+
+      <!-- ESG Score -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:4rem;max-width:700px;margin-left:auto;margin-right:auto;" class="animate-on-scroll animate-delay-1">
+        <div style="text-align:center;padding:2rem;background:rgba(6,79,59,0.06);border-radius:var(--radius-xl);border:1px solid rgba(6,79,59,0.12);">
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:800;color:#065f46;" data-counter="78" data-suffix="/100">0</div>
+          <div style="font-size:0.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:0.08em;margin-top:0.25rem;">Score Environnement</div>
+        </div>
+        <div style="text-align:center;padding:2rem;background:rgba(10,31,68,0.05);border-radius:var(--radius-xl);border:1px solid rgba(10,31,68,0.1);">
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:800;color:var(--color-navy);" data-counter="83" data-suffix="/100">0</div>
+          <div style="font-size:0.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:0.08em;margin-top:0.25rem;">Score Social</div>
+        </div>
+        <div style="text-align:center;padding:2rem;background:rgba(120,53,15,0.06);border-radius:var(--radius-xl);border:1px solid rgba(120,53,15,0.12);">
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:800;color:#92400e;" data-counter="86" data-suffix="/100">0</div>
+          <div style="font-size:0.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:0.08em;margin-top:0.25rem;">Score Gouvernance</div>
+        </div>
+      </div>
+      <p style="text-align:center;font-size:0.75rem;color:var(--color-text-muted);margin-top:1rem;" class="animate-on-scroll animate-delay-2">Notation ESG interne — Rapport annuel 2023 · Audit : Cabinet PricewaterhouseCoopers Madagascar</p>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION — 3 Piliers ESG
+       ===================================================================== -->
+  <section class="section bg-gray" aria-labelledby="piliers-heading">
+    <div class="container">
+      <div class="section-header--center animate-on-scroll">
+        <p class="text-eyebrow">Les 3 piliers de notre RSE</p>
+        <h2 id="piliers-heading" class="heading-xl" style="margin-top:0.75rem;">Environnement. Social. Gouvernance.</h2>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:1.5rem;" role="list">
+
+        <!-- Pilier 1 : Environnement -->
+        <article class="esg-pillar esg-pillar--env animate-on-scroll" role="listitem">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+            <div>
+              <span class="esg-pillar__icon" aria-hidden="true">🌿</span>
+              <h3 class="esg-pillar__title">Environnement & Transition Énergétique</h3>
+              <p class="esg-pillar__text">Le gaz est une énergie de transition — moins carbonée que le charbon et le fioul, il permet à nos clients malagasy de réduire leur empreinte carbone immédiatement, en attendant des alternatives renouvelables pleinement opérationnelles. Nous investissons par ailleurs dans la réduction des émissions de notre propre chaîne opérationnelle.</p>
+              <div class="esg-pillar__kpi">
+                <div class="esg-kpi"><div class="esg-kpi__val" data-counter="35" data-suffix="%">0</div><div class="esg-kpi__label">Réduction CO₂ vs fioul</div></div>
+                <div class="esg-kpi"><div class="esg-kpi__val" data-counter="2035">0</div><div class="esg-kpi__label">Neutralité opérationnelle</div></div>
+                <div class="esg-kpi"><div class="esg-kpi__val" data-counter="12" data-suffix="%">0</div><div class="esg-kpi__label">Éco-conduite flotte</div></div>
+              </div>
+            </div>
+            <div>
+              <div style="font-size:0.6875rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;">Initiatives en cours</div>
+              <div style="display:flex;flex-direction:column;gap:0.875rem;">
+                <div style="background:rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.125rem;">
+                  <div style="font-weight:700;color:white;margin-bottom:0.25rem;">Programme GNL 2025</div>
+                  <div style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Pilote d'intégration de GNL (gaz naturel liquéfié) pour les grands comptes industriels dès 2025.</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.125rem;">
+                  <div style="font-weight:700;color:white;margin-bottom:0.25rem;">Flotte électrique hybride</div>
+                  <div style="font-size:0.875rem;color:rgba(255,255,255,0.6);">10 véhicules légers électriques commandés pour 2024. Objectif : 40% hybride/électrique d'ici 2028.</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.125rem;">
+                  <div style="font-weight:700;color:white;margin-bottom:0.25rem;">Zéro plastique à usage unique</div>
+                  <div style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Élimination complète des emballages plastique UU dans nos sites opérationnels depuis janvier 2023.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pilier 2 : Social -->
+        <article class="esg-pillar esg-pillar--soc animate-on-scroll" role="listitem">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+            <div>
+              <span class="esg-pillar__icon" aria-hidden="true">🤲</span>
+              <h3 class="esg-pillar__title">Social & Développement des Communautés</h3>
+              <p class="esg-pillar__text">95% de nos collaborateurs sont malagasy. Nous investissons massivement dans leur développement professionnel et personnel, et contribuons activement à l'écosystème des compétences techniques à Madagascar via des partenariats avec les établissements d'enseignement technique.</p>
+              <div class="esg-pillar__kpi">
+                <div class="esg-kpi"><div class="esg-kpi__val" data-counter="95" data-suffix="%">0</div><div class="esg-kpi__label">Collaborateurs MG</div></div>
+                <div class="esg-kpi"><div class="esg-kpi__val" data-counter="340" data-suffix="+">0</div><div class="esg-kpi__label">Emplois directs</div></div>
+                <div class="esg-kpi"><div class="esg-kpi__val" data-counter="1200" data-suffix="+">0</div><div class="esg-kpi__label">Emplois indirects</div></div>
+              </div>
+            </div>
+            <div>
+              <div style="font-size:0.6875rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;">Programmes sociaux</div>
+              <div style="display:flex;flex-direction:column;gap:0.875rem;">
+                <div style="background:rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.125rem;">
+                  <div style="font-weight:700;color:white;margin-bottom:0.25rem;">École des Métiers du Gaz</div>
+                  <div style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Programme de formation technique en partenariat avec l'ENAM. 60 techniciens formés par an. Insertion garantie à 85%.</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.125rem;">
+                  <div style="font-weight:700;color:white;margin-bottom:0.25rem;">Fonds d'aide aux familles</div>
+                  <div style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Allocation mensuelle complémentaire, aide à la scolarité des enfants de collaborateurs, mutuelle santé étendue à la famille.</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.125rem;">
+                  <div style="font-weight:700;color:white;margin-bottom:0.25rem;">Femmes dans l'énergie</div>
+                  <div style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Programme de promotion des femmes aux postes techniques et managériaux. Objectif 30% de cadres féminins d'ici 2026.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pilier 3 : Gouvernance -->
+        <article class="esg-pillar esg-pillar--gov animate-on-scroll" role="listitem">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+            <div>
+              <span class="esg-pillar__icon" aria-hidden="true">⚖️</span>
+              <h3 class="esg-pillar__title">Gouvernance & Éthique des Affaires</h3>
+              <p class="esg-pillar__text">Une gouvernance solide est le fondement de la confiance que nos clients, partenaires et investisseurs nous accordent. Notre cadre éthique est contraignant, audité et transparent. Nous refusons tout compromis sur l'intégrité.</p>
+              <div class="esg-pillar__kpi">
+                <div class="esg-kpi"><div class="esg-kpi__val">0</div><div class="esg-kpi__label">Cas de corruption</div></div>
+                <div class="esg-kpi"><div class="esg-kpi__val" data-counter="100" data-suffix="%">0</div><div class="esg-kpi__label">Formation anti-corruption</div></div>
+                <div class="esg-kpi"><div class="esg-kpi__val" data-counter="2">0</div><div class="esg-kpi__label">Audits indépendants/an</div></div>
+              </div>
+            </div>
+            <div>
+              <div style="font-size:0.6875rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;">Dispositifs de gouvernance</div>
+              <div style="display:flex;flex-direction:column;gap:0.875rem;">
+                <div style="background:rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.125rem;">
+                  <div style="font-weight:700;color:white;margin-bottom:0.25rem;">Code de conduite obligatoire</div>
+                  <div style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Signé par 100% des collaborateurs et contractuellement opposable aux fournisseurs et partenaires.</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.125rem;">
+                  <div style="font-weight:700;color:white;margin-bottom:0.25rem;">Mécanisme d'alerte anonyme</div>
+                  <div style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Plateforme de signalement gérée par un tiers indépendant. Aucune sanction pour les signalements de bonne foi.</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:1.125rem;">
+                  <div style="font-weight:700;color:white;margin-bottom:0.25rem;">Rapport ESG annuel public</div>
+                  <div style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Publication annuelle des indicateurs ESG audités, disponible en téléchargement libre sur notre site institutionnel.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION — ODD / SDG Alignment
+       ===================================================================== -->
+  <section class="section bg-white" aria-labelledby="sdg-heading">
+    <div class="container">
+      <div class="section-header--center animate-on-scroll">
+        <p class="text-eyebrow">Objectifs de Développement Durable</p>
+        <h2 id="sdg-heading" class="heading-xl" style="margin-top:0.75rem;">Notre contribution aux ODD de l'ONU.</h2>
+        <p class="text-lead" style="margin-top:1rem;">Nos activités contribuent directement à 6 des 17 Objectifs de Développement Durable des Nations Unies, mesurés et reportés annuellement.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;margin-top:3rem;" class="animate-on-scroll" role="list">
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--color-gray-100);border-radius:var(--radius-xl);padding:1.25rem 2rem;" role="listitem">
+          <div class="sdg-badge" style="background:#e5243b;" aria-label="ODD 7">7</div>
+          <div><div style="font-weight:700;font-size:0.875rem;color:var(--color-navy);">Énergie propre & accessible</div><div style="font-size:0.75rem;color:var(--color-text-muted);">Accès à l'énergie sûre</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--color-gray-100);border-radius:var(--radius-xl);padding:1.25rem 2rem;" role="listitem">
+          <div class="sdg-badge" style="background:#a21942;" aria-label="ODD 8">8</div>
+          <div><div style="font-weight:700;font-size:0.875rem;color:var(--color-navy);">Travail décent & croissance</div><div style="font-size:0.75rem;color:var(--color-text-muted);">340+ emplois directs</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--color-gray-100);border-radius:var(--radius-xl);padding:1.25rem 2rem;" role="listitem">
+          <div class="sdg-badge" style="background:#fd6925;" aria-label="ODD 9">9</div>
+          <div><div style="font-weight:700;font-size:0.875rem;color:var(--color-navy);">Industrie & Innovation</div><div style="font-size:0.75rem;color:var(--color-text-muted);">Infra énergie nationale</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--color-gray-100);border-radius:var(--radius-xl);padding:1.25rem 2rem;" role="listitem">
+          <div class="sdg-badge" style="background:#bf8b2e;" aria-label="ODD 13">13</div>
+          <div><div style="font-weight:700;font-size:0.875rem;color:var(--color-navy);">Mesures climatiques</div><div style="font-size:0.75rem;color:var(--color-text-muted);">Réduction émissions</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--color-gray-100);border-radius:var(--radius-xl);padding:1.25rem 2rem;" role="listitem">
+          <div class="sdg-badge" style="background:#56c02b;" aria-label="ODD 15">15</div>
+          <div><div style="font-weight:700;font-size:0.875rem;color:var(--color-navy);">Vie terrestre</div><div style="font-size:0.75rem;color:var(--color-text-muted);">Zéro pollution sites</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem;background:var(--color-gray-100);border-radius:var(--radius-xl);padding:1.25rem 2rem;" role="listitem">
+          <div class="sdg-badge" style="background:#00689d;" aria-label="ODD 17">17</div>
+          <div><div style="font-weight:700;font-size:0.875rem;color:var(--color-navy);">Partenariats</div><div style="font-size:0.75rem;color:var(--color-text-muted);">Écosystème local</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rapport ESG CTA -->
+  <section style="background:var(--color-navy);padding:4rem 0;">
+    <div class="container" style="text-align:center;">
+      <h2 class="heading-lg text-white" style="margin-bottom:1rem;">Consulter notre Rapport ESG 2023.</h2>
+      <p style="color:rgba(255,255,255,0.65);margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto;">Un rapport complet et audité de nos indicateurs environnementaux, sociaux et de gouvernance. Disponible sur demande.</p>
+      <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn--primary btn--lg">Demander le rapport</a>
+        <a href="carrieres.html" class="btn btn--outline-white btn--lg">Rejoindre notre équipe</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top"><div class="container"><div class="footer__grid">
+      <div><div class="footer__brand-logo">Vito<span>gaz</span> Madagascar</div><p class="footer__brand-desc">Leader de la distribution de gaz à Madagascar depuis 2003.</p></div>
+      <div><div class="footer__nav-title">Groupe</div><ul class="footer__nav-list"><li><a href="groupe.html" class="footer__nav-link">Notre histoire</a></li><li><a href="rse.html" class="footer__nav-link">RSE & ESG</a></li><li><a href="carrieres.html" class="footer__nav-link">Carrières</a></li></ul></div>
+      <div><div class="footer__nav-title">Solutions</div><ul class="footer__nav-list"><li><a href="solutions.html" class="footer__nav-link">Toutes nos solutions</a></li><li><a href="securite.html" class="footer__nav-link">Sécurité</a></li></ul></div>
+      <div><div class="footer__nav-title">Contact</div><ul class="footer__nav-list"><li><a href="contact.html" class="footer__nav-link">Nous contacter</a></li><li><a href="tel:+261200000000" class="footer__nav-link">+261 20 XX XX XX</a></li></ul></div>
+    </div></div></div>
+    <div class="container"><div class="footer__bottom"><p class="footer__copyright">&copy; <span id="footer-year">2024</span> Vitogaz Madagascar.</p><nav class="footer__legal"><a href="#" class="footer__legal-link">Mentions légales</a></nav></div></div>
+  </footer>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
