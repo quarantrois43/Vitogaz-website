@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Fond arrondi vert -->
+  <rect x="0" y="0" width="52" height="52" rx="10" fill="#006B60"/>
+  <!-- Lettre V -->
+  <text x="26" y="38" font-family="Arial Black, sans-serif" font-size="32" font-weight="900" fill="white" text-anchor="middle">V</text>
+  <!-- Ligne rouge -->
+  <line x1="4" y1="48" x2="48" y2="48" stroke="#E31E24" stroke-width="4" stroke-linecap="round"/>
+  <!-- Texte VITOGAZ -->
+  <text x="62" y="28" font-family="Arial Black, sans-serif" font-size="22" font-weight="900" fill="#006B60">VITOGAZ</text>
+  <!-- Texte Madagascar -->
+  <text x="63" y="46" font-family="Arial, sans-serif" font-size="11" fill="#E31E24" letter-spacing="2">MADAGASCAR</text>
+</svg>
