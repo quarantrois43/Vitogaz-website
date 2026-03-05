@@ -7,11 +7,7 @@ const NAV_HTML = `
 <nav class="nav nav--light" role="navigation" aria-label="Navigation principale">
   <div class="nav__inner">
     <a href="index.html" class="nav__logo" aria-label="Vitogaz Madagascar — Accueil">
-      <div class="nav__logo-svg" aria-hidden="true"></div>
-      <div>
-        <div class="nav__logo-text" style="color:var(--color-navy)">Vito<span>gaz</span></div>
-        <span class="nav__logo-sub" style="color:var(--color-text-muted)">Madagascar</span>
-      </div>
+      <img src="assets/images/logo-vitogaz.png" alt="Vitogaz Madagascar" class="nav__logo-img" />
     </a>
     <ul class="nav__links" role="list">
       <li class="nav__item">
@@ -67,9 +63,9 @@ const NAV_HTML = `
     </ul>
     <a href="contact.html" class="nav__cta">Demander un devis</a>
     <button class="nav__menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
-      <span style="background:var(--color-navy)"></span>
-      <span style="background:var(--color-navy)"></span>
-      <span style="background:var(--color-navy)"></span>
+      <span style="background:var(--color-navy-dark)"></span>
+      <span style="background:var(--color-navy-dark)"></span>
+      <span style="background:var(--color-navy-dark)"></span>
     </button>
   </div>
   <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu mobile">
@@ -93,7 +89,7 @@ const FOOTER_HTML = `
     <div class="container">
       <div class="footer__grid">
         <div>
-          <div class="footer__brand-logo">Vito<span>gaz</span> Madagascar</div>
+          <div class="footer__brand-logo"><img src="assets/images/logo-vitogaz.png" alt="Vitogaz Madagascar" style="height:48px;width:auto;display:block;margin-bottom:0.5rem;" /></div>
           <p class="footer__brand-desc">Leader de la distribution de gaz à Madagascar depuis 2003. Fournisseur de référence pour l'industrie, l'hôtellerie et les institutions publiques malagasy.</p>
           <div class="footer__social" aria-label="Réseaux sociaux">
             <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
