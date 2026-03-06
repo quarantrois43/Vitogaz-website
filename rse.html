@@ -29,6 +29,18 @@
       font-family:var(--font-display);font-weight:800;color:white;font-size:0.875rem;
     }
   </style>
+  <style>
+    [data-lucide] { width:1.25em; height:1.25em; vertical-align:middle; stroke-width:1.75; display:inline-block; }
+    .nav__mega-icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .card-service__icon [data-lucide],
+    .rse-card__icon [data-lucide],
+    .esg-pillar__icon [data-lucide] { width:2rem; height:2rem; }
+    .about__feature-icon [data-lucide],
+    .security__certif-badge [data-lucide],
+    .value-card__icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .card-industry__icon [data-lucide] { width:2.5rem; height:2.5rem; stroke:#fff; }
+    .contact-info-icon [data-lucide] { width:1.25rem; height:1.25rem; }
+  </style>
 </head>
 <body>
 
@@ -47,7 +59,7 @@
       <button class="nav__menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile" role="dialog" aria-modal="true">
-      <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+      <button class="nav__mobile-close" aria-label="Fermer"><i data-lucide="x"></i></button>
       <a href="index.html" class="nav__mobile-link">Accueil</a>
       <a href="groupe.html" class="nav__mobile-link">Groupe</a>
       <a href="solutions.html" class="nav__mobile-link">Solutions BtoB</a>
@@ -118,7 +130,7 @@
         <article class="esg-pillar esg-pillar--env animate-on-scroll" role="listitem">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
             <div>
-              <span class="esg-pillar__icon" aria-hidden="true">🌿</span>
+              <span class="esg-pillar__icon" aria-hidden="true"><i data-lucide="leaf"></i></span>
               <h3 class="esg-pillar__title">Environnement & Transition Énergétique</h3>
               <p class="esg-pillar__text">Le gaz est une énergie de transition — moins carbonée que le charbon et le fioul, il permet à nos clients malagasy de réduire leur empreinte carbone immédiatement, en attendant des alternatives renouvelables pleinement opérationnelles. Nous investissons par ailleurs dans la réduction des émissions de notre propre chaîne opérationnelle.</p>
               <div class="esg-pillar__kpi">
@@ -151,7 +163,7 @@
         <article class="esg-pillar esg-pillar--soc animate-on-scroll" role="listitem">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
             <div>
-              <span class="esg-pillar__icon" aria-hidden="true">🤲</span>
+              <span class="esg-pillar__icon" aria-hidden="true"><i data-lucide="heart-handshake"></i></span>
               <h3 class="esg-pillar__title">Social & Développement des Communautés</h3>
               <p class="esg-pillar__text">95% de nos collaborateurs sont malagasy. Nous investissons massivement dans leur développement professionnel et personnel, et contribuons activement à l'écosystème des compétences techniques à Madagascar via des partenariats avec les établissements d'enseignement technique.</p>
               <div class="esg-pillar__kpi">
@@ -184,7 +196,7 @@
         <article class="esg-pillar esg-pillar--gov animate-on-scroll" role="listitem">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
             <div>
-              <span class="esg-pillar__icon" aria-hidden="true">⚖️</span>
+              <span class="esg-pillar__icon" aria-hidden="true"><i data-lucide="scale"></i></span>
               <h3 class="esg-pillar__title">Gouvernance & Éthique des Affaires</h3>
               <p class="esg-pillar__text">Une gouvernance solide est le fondement de la confiance que nos clients, partenaires et investisseurs nous accordent. Notre cadre éthique est contraignant, audité et transparent. Nous refusons tout compromis sur l'intégrité.</p>
               <div class="esg-pillar__kpi">
@@ -279,5 +291,8 @@
   </footer>
   <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
   <script src="assets/js/main.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>

@@ -376,7 +376,24 @@ function initSmoothScroll() {
 }
 
 /* ==========================================================================
-   9. COOKIE BANNER (RGPD placeholder)
+   9. SCROLL INDICATOR — Clic pour défiler vers la section suivante
+   ========================================================================== */
+function initScrollIndicator() {
+  const scrollIndicator = document.querySelector('.hero__scroll');
+  if (!scrollIndicator) return;
+
+  scrollIndicator.style.cursor = 'pointer';
+
+  scrollIndicator.addEventListener('click', () => {
+    const nextSection = document.querySelector('.hero + section');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
+
+/* ==========================================================================
+   10. COOKIE BANNER (RGPD placeholder)
    ========================================================================== */
 class CookieBanner {
   constructor() {
@@ -437,7 +454,7 @@ class CookieBanner {
 }
 
 /* ==========================================================================
-   10. BACK TO TOP BUTTON
+   11. BACK TO TOP BUTTON
    ========================================================================== */
 function initBackToTop() {
   const btn = document.createElement('button');
@@ -469,10 +486,9 @@ function initBackToTop() {
 }
 
 /* ==========================================================================
-   11. SVG LOGO INLINE
+   12. SVG LOGO INLINE
    ========================================================================== */
 function inlineSVGLogo() {
-  // Replace logo placeholder if exists
   document.querySelectorAll('.nav__logo-svg').forEach(container => {
     container.innerHTML = `
       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -486,7 +502,7 @@ function inlineSVGLogo() {
 }
 
 /* ==========================================================================
-   12. INITIALIZE ALL
+   13. INITIALIZE ALL
    ========================================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   // Core modules
@@ -500,6 +516,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Utilities
   initSmoothScroll();
+  initScrollIndicator();
   initBackToTop();
   inlineSVGLogo();
 
@@ -514,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   13. IMAGE LAZY LOAD FALLBACK (for browsers without loading="lazy")
+   14. IMAGE LAZY LOAD FALLBACK (for browsers without loading="lazy")
    ========================================================================== */
 if ('IntersectionObserver' in window) {
   const lazyImages = document.querySelectorAll('img[data-src]');

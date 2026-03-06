@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="shortcut icon" href="assets/images/mascotte-vitogaz.png" />
   <link rel="icon" type="image/png" sizes="64x64" href="assets/images/mascotte-vitogaz.png" />
+  <style>
+    [data-lucide] { width:1.25em; height:1.25em; vertical-align:middle; stroke-width:1.75; display:inline-block; }
+    .nav__mega-icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .about__feature-icon [data-lucide],
+    .security__certif-badge [data-lucide] { width:1.5rem; height:1.5rem; }
+  </style>
 </head>
 <body>
 
@@ -31,7 +37,7 @@
       </button>
     </div>
     <div class="nav__mobile" role="dialog" aria-modal="true">
-      <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+      <button class="nav__mobile-close" aria-label="Fermer"><i data-lucide="x"></i></button>
       <a href="index.html" class="nav__mobile-link">Accueil</a>
       <a href="groupe.html" class="nav__mobile-link">Groupe & Vision</a>
       <a href="solutions.html" class="nav__mobile-link">Solutions BtoB</a>
@@ -77,12 +83,12 @@
 
           <div style="margin-top:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
             <div style="background:var(--color-gray-100);border-radius:var(--radius-xl);padding:1.5rem;">
-              <div style="font-size:1.5rem;margin-bottom:0.5rem;">🎯</div>
+              <div style="font-size:1.5rem;margin-bottom:0.5rem;"><i data-lucide="target"></i></div>
               <div style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.5rem;">Mission</div>
               <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.65;">Fournir un accès fiable, sécurisé et économiquement compétitif à l'énergie gazeuse pour les acteurs économiques de Madagascar.</p>
             </div>
             <div style="background:var(--color-gray-100);border-radius:var(--radius-xl);padding:1.5rem;">
-              <div style="font-size:1.5rem;margin-bottom:0.5rem;">💡</div>
+              <div style="font-size:1.5rem;margin-bottom:0.5rem;"><i data-lucide="lightbulb"></i></div>
               <div style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.5rem;">Vision 2030</div>
               <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.65;">Devenir le premier groupe énergétique privé de Madagascar par la diversification et l'excellence opérationnelle.</p>
             </div>
@@ -106,9 +112,9 @@
             "Notre responsabilité dépasse la simple fourniture de gaz. Nous contribuons à l'infrastructure critique qui permet à Madagascar de produire, créer et se développer."
           </p>
           <div style="display:flex;align-items:center;gap:1rem;">
-            <div style="width:52px;height:52px;border-radius:50%;background:var(--color-orange);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;color:white;flex-shrink:0;">DR</div>
+            <div style="width:52px;height:52px;border-radius:50%;background:var(--color-orange);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;color:white;flex-shrink:0;">ZA</div>
             <div>
-              <div style="font-family:var(--font-display);font-weight:700;color:white;">Didier Rasolofoson</div>
+              <div style="font-family:var(--font-display);font-weight:700;color:white;">Zo Andriamampianina</div>
               <div style="font-size:0.8125rem;color:rgba(255,255,255,0.5);">Directeur Général, Vitogaz Madagascar</div>
             </div>
           </div>
@@ -217,31 +223,30 @@
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;margin-top:3rem;" role="list">
 
         <article style="text-align:center;" class="animate-on-scroll" role="listitem">
-          <div style="width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--color-navy),var(--color-navy-light));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.5rem;color:var(--color-orange);margin:0 auto 1.25rem;" aria-hidden="true">DR</div>
-          <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;">Didier Rasolofoson</h3>
+          <div style="width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--color-navy),var(--color-navy-light));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.5rem;color:var(--color-orange);margin:0 auto 1.25rem;" aria-hidden="true">ZA</div>
+          <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;">Zo Andriamampianina</h3>
           <p style="font-size:0.8125rem;color:var(--color-orange);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin:0.25rem 0 0.75rem;">Directeur Général</p>
-          <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.6;">MBA HEC Paris. 18 ans d'expérience dans la distribution énergétique en Afrique sub-saharienne. Ex-Total Madagascar.</p>
+          <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.6;">MBA, HEC Paris. 18 ans d'expérience dans la distribution énergétique en Afrique sub-saharienne.</p>
         </article>
 
         <article style="text-align:center;" class="animate-on-scroll animate-delay-1" role="listitem">
-          <div style="width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--color-navy),var(--color-navy-light));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.5rem;color:var(--color-orange);margin:0 auto 1.25rem;" aria-hidden="true">MR</div>
-          <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;">Miora Rakotoarivelo</h3>
-          <p style="font-size:0.8125rem;color:var(--color-orange);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin:0.25rem 0 0.75rem;">Directrice Administrative & Financière</p>
-          <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.6;">Expert-comptable certifiée. Master en Finance d'entreprise, Université d'Antananarivo. 12 ans en cabinet d'audit international.</p>
+          <div style="width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--color-navy),var(--color-navy-light));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.5rem;color:var(--color-orange);margin:0 auto 1.25rem;" aria-hidden="true">FR</div>
+          <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;">Fenosoa Rajaofera</h3>
+          <p style="font-size:0.8125rem;color:var(--color-orange);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin:0.25rem 0 0.75rem;">Directeur Financier</p>
+          <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.6;">Master en Finance d'entreprise, INSCAE. 12 ans en cabinet d'audit international.</p>
         </article>
 
         <article style="text-align:center;" class="animate-on-scroll animate-delay-2" role="listitem">
-          <div style="width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--color-navy),var(--color-navy-light));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.5rem;color:var(--color-orange);margin:0 auto 1.25rem;" aria-hidden="true">HL</div>
-          <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;">Henri Lalaina</h3>
-          <p style="font-size:0.8125rem;color:var(--color-orange);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin:0.25rem 0 0.75rem;">Directeur Technique & HSE</h3>
-          <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.6;">Ingénieur génie chimique. Certifié ATEX et ADR. 15 ans en ingénierie pétro-gazière sur les marchés africains et du Moyen-Orient.</p>
+          <div style="width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--color-navy),var(--color-navy-light));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.5rem;color:var(--color-orange);margin:0 auto 1.25rem;" aria-hidden="true">ER</div>
+          <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;">Elia Rajoelinarivo</h3>
+          <p style="font-size:0.8125rem;color:var(--color-orange);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin:0.25rem 0 0.75rem;">Directeur Transformation RH et Durabilité</h3>
+          <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.6;">Master en Management, ISCAM. 12 ans d'expérience polyvalente.</p>
         </article>
-
         <article style="text-align:center;" class="animate-on-scroll animate-delay-3" role="listitem">
-          <div style="width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--color-navy),var(--color-navy-light));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.5rem;color:var(--color-orange);margin:0 auto 1.25rem;" aria-hidden="true">FA</div>
-          <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;">Farida Andriamamonjy</h3>
-          <p style="font-size:0.8125rem;color:var(--color-orange);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin:0.25rem 0 0.75rem;">Directrice Commerciale BtoB</p>
-          <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.6;">Master en Commerce international. Spécialiste BtoB et grands comptes. A développé le portefeuille clients de 200 à 1 200 comptes en 7 ans.</p>
+          <div style="width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--color-navy),var(--color-navy-light));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:1.5rem;color:var(--color-orange);margin:0 auto 1.25rem;" aria-hidden="true">CG</div>
+          <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;">Cyril Giuliani</h3>
+          <p style="font-size:0.8125rem;color:var(--color-orange);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin:0.25rem 0 0.75rem;">Directeur des Opérations</p>
+          <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.6;">Ingénieur HSE, Polytech Grenoble. 20 ans d'expérience dans la production, maintenance, HSE.</p>
         </article>
 
       </div>
@@ -279,7 +284,7 @@
       </div>
       <div>
         <div class="footer__nav-title">Contact</div>
-        <ul class="footer__nav-list"><li><a href="contact.html" class="footer__nav-link">Demander un devis</a></li><li><a href="tel:+261200000000" class="footer__nav-link">+261 20 XX XX XX</a></li><li><a href="mailto:contact@vitogaz.mg" class="footer__nav-link">contact@vitogaz.mg</a></li></ul>
+        <ul class="footer__nav-list"><li><a href="contact.html" class="footer__nav-link">Demander un devis</a></li><li><a href="tel:+261200000000" class="footer__nav-link">+261 20 XX XX XX</a></li><li><a href="/cdn-cgi/l/email-protection#98fbf7f6ecf9fbecd8eef1ecf7fff9e2b6f5ff" class="footer__nav-link"><span class="__cf_email__" data-cfemail="12717d7c6673716652647b667d7573683c7f75">[email&#160;protected]</span></a></li></ul>
       </div>
     </div></div></div>
     <div class="container"><div class="footer__bottom">
@@ -287,8 +292,9 @@
       <nav class="footer__legal"><a href="#" class="footer__legal-link">Mentions légales</a><a href="#" class="footer__legal-link">Confidentialité</a></nav>
     </div></div>
   </footer>
-
-  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -47,6 +47,18 @@
     }
     .feature-item-text strong { color:var(--color-navy); }
   </style>
+  <style>
+    [data-lucide] { width:1.25em; height:1.25em; vertical-align:middle; stroke-width:1.75; display:inline-block; }
+    .nav__mega-icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .card-service__icon [data-lucide],
+    .rse-card__icon [data-lucide],
+    .esg-pillar__icon [data-lucide] { width:2rem; height:2rem; }
+    .about__feature-icon [data-lucide],
+    .security__certif-badge [data-lucide],
+    .value-card__icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .card-industry__icon [data-lucide] { width:2.5rem; height:2.5rem; stroke:#fff; }
+    .contact-info-icon [data-lucide] { width:1.25rem; height:1.25rem; }
+  </style>
 </head>
 <body>
 
@@ -68,7 +80,7 @@
       <button class="nav__menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile" role="dialog" aria-modal="true">
-      <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+      <button class="nav__mobile-close" aria-label="Fermer"><i data-lucide="x"></i></button>
       <a href="index.html" class="nav__mobile-link">Accueil</a>
       <a href="groupe.html" class="nav__mobile-link">Groupe</a>
       <a href="solutions.html" class="nav__mobile-link">Solutions BtoB</a>
@@ -100,12 +112,12 @@
 
       <!-- Tabs Navigation -->
       <div class="tabs-nav" role="tablist" aria-label="Secteurs d'activité" data-tabs="solutions">
-        <button class="tab-btn" role="tab" data-tab="industrie" id="tab-industrie" aria-controls="panel-industrie">🏭 Industrie</button>
-        <button class="tab-btn" role="tab" data-tab="hotellerie" id="tab-hotellerie" aria-controls="panel-hotellerie">🏨 Hôtellerie & Resto</button>
-        <button class="tab-btn" role="tab" data-tab="distribution" id="tab-distribution" aria-controls="panel-distribution">🚚 Distribution</button>
-        <button class="tab-btn" role="tab" data-tab="immobilier" id="tab-immobilier" aria-controls="panel-immobilier">🏗 Immobilier</button>
-        <button class="tab-btn" role="tab" data-tab="institutions" id="tab-institutions" aria-controls="panel-institutions">🏛 Institutions</button>
-        <button class="tab-btn" role="tab" data-tab="projets-speciaux" id="tab-projets" aria-controls="panel-projets">⚡ Projets spéciaux</button>
+        <button class="tab-btn" role="tab" data-tab="industrie" id="tab-industrie" aria-controls="panel-industrie"><i data-lucide="factory"></i> Industrie</button>
+        <button class="tab-btn" role="tab" data-tab="hotellerie" id="tab-hotellerie" aria-controls="panel-hotellerie"><i data-lucide="building-2"></i> Hôtellerie & Resto</button>
+        <button class="tab-btn" role="tab" data-tab="distribution" id="tab-distribution" aria-controls="panel-distribution"><i data-lucide="truck"></i> Distribution</button>
+        <button class="tab-btn" role="tab" data-tab="immobilier" id="tab-immobilier" aria-controls="panel-immobilier"><i data-lucide="hard-hat"></i> Immobilier</button>
+        <button class="tab-btn" role="tab" data-tab="institutions" id="tab-institutions" aria-controls="panel-institutions"><i data-lucide="landmark"></i> Institutions</button>
+        <button class="tab-btn" role="tab" data-tab="projets-speciaux" id="tab-projets" aria-controls="panel-projets"><i data-lucide="zap"></i> Projets spéciaux</button>
       </div>
 
       <!-- INDUSTRIE -->
@@ -121,11 +133,11 @@
               Nos ingénieurs réalisent un audit préalable de vos installations, dimensionnent les capacités de stockage sur site et établissent un plan d'approvisionnement avec un calendrier de livraison adapté à vos cycles de production.
             </p>
             <div class="feature-list">
-              <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Contrats-cadres pluriannuels</strong> avec SLA de disponibilité garantie et pénalités contractuelles en cas de défaillance.</div></div>
-              <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Technicien dédié</strong> assigné à votre compte, disponible 24h/24 pour les sites critiques.</div></div>
-              <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Cuves de stockage industrielles</strong> installées et entretenues par nos équipes certifiées ATEX.</div></div>
-              <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Télésurveillance des niveaux</strong> avec alerte automatique et déclenchement de réapprovisionnement.</div></div>
-              <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Reporting mensuel</strong> de consommation, projections et analyse des économies réalisées.</div></div>
+              <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Contrats-cadres pluriannuels</strong> avec SLA de disponibilité garantie et pénalités contractuelles en cas de défaillance.</div></div>
+              <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Technicien dédié</strong> assigné à votre compte, disponible 24h/24 pour les sites critiques.</div></div>
+              <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Cuves de stockage industrielles</strong> installées et entretenues par nos équipes certifiées ATEX.</div></div>
+              <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Télésurveillance des niveaux</strong> avec alerte automatique et déclenchement de réapprovisionnement.</div></div>
+              <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Reporting mensuel</strong> de consommation, projections et analyse des économies réalisées.</div></div>
             </div>
             <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
               <a href="contact.html" class="btn btn--primary">Obtenir un audit gratuit</a>
@@ -187,11 +199,11 @@
             <p class="text-body">Dans l'hôtellerie, une panne d'approvisionnement en gaz signifie des services interrompus, des clients insatisfaits et une réputation fragilisée. Vitogaz garantit que cela ne se produise pas.</p>
             <p class="text-body" style="margin-top:1rem;">Nous travaillons avec les établissements hôteliers de 3 à 5 étoiles, les resorts balnéaires, les lodges de brousse et les chaînes de restauration collective pour construire des plans d'approvisionnement adaptés à leurs rythmes d'exploitation.</p>
             <div class="feature-list">
-              <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Livraisons planifiées</strong> sur mesure selon vos saisons, événements et pics d'occupation.</div></div>
-              <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Stock tampon sur site</strong> dimensionné pour 15 jours d'autonomie minimum.</div></div>
-              <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Intervention d'urgence 4h</strong> pour les établissements sous contrat prioritaire.</div></div>
-              <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Formation du personnel</strong> aux procédures de sécurité gaz dans les cuisines professionnelles.</div></div>
-              <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Facturation mensuelle consolidée</strong> avec détail par point de consommation.</div></div>
+              <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Livraisons planifiées</strong> sur mesure selon vos saisons, événements et pics d'occupation.</div></div>
+              <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Stock tampon sur site</strong> dimensionné pour 15 jours d'autonomie minimum.</div></div>
+              <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Intervention d'urgence 4h</strong> pour les établissements sous contrat prioritaire.</div></div>
+              <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Formation du personnel</strong> aux procédures de sécurité gaz dans les cuisines professionnelles.</div></div>
+              <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Facturation mensuelle consolidée</strong> avec détail par point de consommation.</div></div>
             </div>
             <a href="contact.html" class="btn btn--primary" style="margin-top:2rem;">Étude personnalisée</a>
           </div>
@@ -202,7 +214,7 @@
               <div style="width:44px;height:44px;border-radius:50%;background:var(--color-orange);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:var(--font-display);">RL</div>
               <div>
                 <div style="font-weight:700;font-family:var(--font-display);">Rivo Lala</div>
-                <div style="font-size:0.8125rem;color:rgba(255,255,255,0.5);">F&B Manager, Grand Hôtel Antananarivo ★★★★★</div>
+                <div style="font-size:0.8125rem;color:rgba(255,255,255,0.5);">F&B Manager, Grand Hôtel Antananarivo 5 étoiles</div>
               </div>
             </div>
             <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.08);">
@@ -228,11 +240,11 @@
               <p class="text-body">Notre programme de distribution agréée permet à des entreprises locales de commercialiser les produits Vitogaz avec un accès privilégié à nos stocks, nos tarifs et notre support commercial et logistique.</p>
               <p class="text-body" style="margin-top:1rem;">Nous recherchons des partenaires solides dans les zones où notre couverture directe est limitée. En échange d'engagements minimaux de volume, nous offrons des conditions exclusives et un accompagnement structuré.</p>
               <div class="feature-list">
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Remises préférentielles</strong> progressives selon les paliers de volume atteints.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Exclusivité territoriale</strong> pour les distributeurs agréés exclusifs dans leur zone.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Formation certifiante</strong> en sécurité gaz pour vos équipes opérationnelles.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Outils de gestion</strong> : système de commande en ligne, suivi des stocks et rapports.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Support marketing</strong> : PLV, signalétique de point de vente et matériaux promotionnels.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Remises préférentielles</strong> progressives selon les paliers de volume atteints.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Exclusivité territoriale</strong> pour les distributeurs agréés exclusifs dans leur zone.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Formation certifiante</strong> en sécurité gaz pour vos équipes opérationnelles.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Outils de gestion</strong> : système de commande en ligne, suivi des stocks et rapports.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Support marketing</strong> : PLV, signalétique de point de vente et matériaux promotionnels.</div></div>
               </div>
               <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
                 <a href="partenaire.html" class="btn btn--primary">Devenir distributeur</a>
@@ -248,11 +260,11 @@
                     <span style="font-size:0.8125rem;color:var(--color-text-secondary);">Dès 2T/mois</span>
                   </div>
                   <div style="padding:1rem;background:white;border-radius:var(--radius-lg);border:2px solid var(--color-orange);display:flex;justify-content:space-between;align-items:center;">
-                    <span style="font-size:0.875rem;font-weight:700;color:var(--color-navy);">Niveau Argent ⭐</span>
+                    <span style="font-size:0.875rem;font-weight:700;color:var(--color-navy);">Niveau Argent <i data-lucide="star"></i></span>
                     <span style="font-size:0.8125rem;color:var(--color-orange);font-weight:600;">Dès 8T/mois</span>
                   </div>
                   <div style="padding:1rem;background:var(--color-navy);border-radius:var(--radius-lg);display:flex;justify-content:space-between;align-items:center;">
-                    <span style="font-size:0.875rem;font-weight:700;color:white;">Niveau Or ⭐⭐⭐</span>
+                    <span style="font-size:0.875rem;font-weight:700;color:white;">Niveau Or 3 étoiles</span>
                     <span style="font-size:0.8125rem;color:var(--color-orange);">Dès 20T/mois</span>
                   </div>
                 </div>
@@ -272,10 +284,10 @@
               <h2 class="heading-lg" style="margin-top:1rem;margin-bottom:1.25rem;">L'énergie au cœur de vos projets de développement immobilier.</h2>
               <p class="text-body">Nous intervenons dès la phase de conception pour intégrer les réseaux gaz collectifs dans vos plans. Résidences, complexes mixtes, zones industrielles, hôtels neufs — notre expertise couvre l'ensemble du cycle projet.</p>
               <div class="feature-list">
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Conseil en phase APS/APD</strong> : dimensionnement des besoins et intégration dans les plans architecturaux.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Installation des réseaux collectifs</strong> par nos équipes certifiées, conformes aux normes NF GAZ et réglementations malagasy.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Mise en service et réception</strong> avec documentation technique complète pour les dossiers de permis.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Contrats de maintenance</strong> et vérifications périodiques post-livraison pour les syndics.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Conseil en phase APS/APD</strong> : dimensionnement des besoins et intégration dans les plans architecturaux.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Installation des réseaux collectifs</strong> par nos équipes certifiées, conformes aux normes NF GAZ et réglementations malagasy.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Mise en service et réception</strong> avec documentation technique complète pour les dossiers de permis.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Contrats de maintenance</strong> et vérifications périodiques post-livraison pour les syndics.</div></div>
               </div>
               <a href="contact.html" class="btn btn--primary" style="margin-top:2rem;">Soumettre un projet</a>
             </div>
@@ -309,11 +321,11 @@
               <h2 class="heading-lg" style="margin-top:1rem;margin-bottom:1.25rem;">Un partenaire certifié pour vos marchés publics.</h2>
               <p class="text-body">Vitogaz répond aux appels d'offres des administrations publiques malagasy, organisations internationales et établissements de santé. Nos processus sont conçus pour la conformité aux exigences de la commande publique.</p>
               <div class="feature-list">
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Réponse AO clé en main</strong> avec dossier technique, financier et RSE complet.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Marchés-cadres pluriannuels</strong> avec révision tarifaire transparente et indexée.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Facturation mensuelle détaillée</strong> compatible avec les systèmes comptables publics.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Rapport de livraison certifié</strong> pour chaque bon de commande, archivé 10 ans.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Caution bancaire et garanties</strong> conformes aux exigences du code des marchés publics.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Réponse AO clé en main</strong> avec dossier technique, financier et RSE complet.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Marchés-cadres pluriannuels</strong> avec révision tarifaire transparente et indexée.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Facturation mensuelle détaillée</strong> compatible avec les systèmes comptables publics.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Rapport de livraison certifié</strong> pour chaque bon de commande, archivé 10 ans.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Caution bancaire et garanties</strong> conformes aux exigences du code des marchés publics.</div></div>
               </div>
               <a href="contact.html" class="btn btn--primary" style="margin-top:2rem;">Contacter notre équipe AO</a>
             </div>
@@ -321,19 +333,19 @@
               <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:1.5rem;">Établissements publics accompagnés</h3>
               <div style="display:flex;flex-direction:column;gap:0.875rem;">
                 <div style="display:flex;align-items:center;gap:0.75rem;padding:0.875rem;background:white;border-radius:var(--radius-lg);">
-                  <span style="font-size:1.25rem;">🏥</span><span style="font-size:0.9375rem;color:var(--color-text-secondary);">Hôpitaux et centres de santé</span>
+                  <span style="font-size:1.25rem;"><i data-lucide="stethoscope"></i></span><span style="font-size:0.9375rem;color:var(--color-text-secondary);">Hôpitaux et centres de santé</span>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem;padding:0.875rem;background:white;border-radius:var(--radius-lg);">
-                  <span style="font-size:1.25rem;">🎓</span><span style="font-size:0.9375rem;color:var(--color-text-secondary);">Universités et lycées techniques</span>
+                  <span style="font-size:1.25rem;"><i data-lucide="graduation-cap"></i></span><span style="font-size:0.9375rem;color:var(--color-text-secondary);">Universités et lycées techniques</span>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem;padding:0.875rem;background:white;border-radius:var(--radius-lg);">
-                  <span style="font-size:1.25rem;">🏛</span><span style="font-size:0.9375rem;color:var(--color-text-secondary);">Administrations centrales et déconcentrées</span>
+                  <span style="font-size:1.25rem;"><i data-lucide="landmark"></i></span><span style="font-size:0.9375rem;color:var(--color-text-secondary);">Administrations centrales et déconcentrées</span>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem;padding:0.875rem;background:white;border-radius:var(--radius-lg);">
-                  <span style="font-size:1.25rem;">🌐</span><span style="font-size:0.9375rem;color:var(--color-text-secondary);">Organisations internationales (ONU, ONG)</span>
+                  <span style="font-size:1.25rem;"><i data-lucide="globe"></i></span><span style="font-size:0.9375rem;color:var(--color-text-secondary);">Organisations internationales (ONU, ONG)</span>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem;padding:0.875rem;background:white;border-radius:var(--radius-lg);">
-                  <span style="font-size:1.25rem;">⚓</span><span style="font-size:0.9375rem;color:var(--color-text-secondary);">Forces armées et gendarmerie</span>
+                  <span style="font-size:1.25rem;"><i data-lucide="anchor"></i></span><span style="font-size:0.9375rem;color:var(--color-text-secondary);">Forces armées et gendarmerie</span>
                 </div>
               </div>
             </div>
@@ -351,10 +363,10 @@
               <p class="text-body">Certaines opérations requièrent une approche sur mesure : sites isolés, déploiements temporaires de grande échelle, besoins combinant gaz, logistique avancée et ingénierie spécifique.</p>
               <p class="text-body" style="margin-top:1rem;">Notre cellule Projets Spéciaux est composée d'ingénieurs seniors capables de concevoir et opérer des solutions atypiques dans des délais contraints.</p>
               <div class="feature-list">
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Sites isolés et hors réseau</strong> : camps miniers, bases de chantier, îles, zones enclavées.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Événements de grande envergure</strong> : festivals, sommets internationaux, tournages.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Solutions temporaires d'urgence</strong> en cas de sinistre ou défaillance de l'approvisionnement habituel.</div></div>
-                <div class="feature-item"><div class="feature-item-check">✓</div><div class="feature-item-text"><strong>Ingénierie de réseau complexe</strong> : multi-sites, stockage intermédiaire, architecture maillée.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Sites isolés et hors réseau</strong> : camps miniers, bases de chantier, îles, zones enclavées.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Événements de grande envergure</strong> : festivals, sommets internationaux, tournages.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Solutions temporaires d'urgence</strong> en cas de sinistre ou défaillance de l'approvisionnement habituel.</div></div>
+                <div class="feature-item"><div class="feature-item-check"><i data-lucide="check"></i></div><div class="feature-item-text"><strong>Ingénierie de réseau complexe</strong> : multi-sites, stockage intermédiaire, architecture maillée.</div></div>
               </div>
               <a href="contact.html" class="btn btn--primary" style="margin-top:2rem;">Soumettre votre projet</a>
             </div>
@@ -450,5 +462,8 @@
       }
     });
   </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>

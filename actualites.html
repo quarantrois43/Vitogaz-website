@@ -41,6 +41,13 @@
     .news-featured__title { font-family:var(--font-display);font-weight:800;color:var(--color-navy);font-size:1.625rem;line-height:1.25;margin-bottom:1.25rem; }
     .news-featured__text { font-size:1rem;color:var(--color-text-secondary);line-height:1.75;margin-bottom:2rem; }
   </style>
+  <style>
+    [data-lucide] { width:1.25em; height:1.25em; vertical-align:middle; stroke-width:1.75; display:inline-block; }
+    .nav__mega-icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .news-featured [data-lucide],
+    .news-card__img [data-lucide] { width:2.5rem; height:2.5rem; }
+    .contact-info-icon [data-lucide] { width:1.25rem; height:1.25rem; }
+  </style>
 </head>
 <body>
 
@@ -59,7 +66,7 @@
       <button class="nav__menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile" role="dialog" aria-modal="true">
-      <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+      <button class="nav__mobile-close" aria-label="Fermer"><i data-lucide="x"></i></button>
       <a href="index.html" class="nav__mobile-link">Accueil</a>
       <a href="actualites.html" class="nav__mobile-link">Actualités</a>
       <a href="contact.html" class="nav__mobile-cta">Demander un devis</a>
@@ -87,7 +94,7 @@
 
       <!-- Featured article -->
       <div class="news-featured animate-on-scroll" role="article" aria-labelledby="news-featured-title">
-        <div class="news-featured__img" role="img" aria-label="Inauguration terminal Toamasina" aria-hidden="true">⚡</div>
+        <div class="news-featured__img" role="img" aria-label="Inauguration terminal Toamasina" aria-hidden="true"><i data-lucide="zap"></i></div>
         <div class="news-featured__body">
           <div class="news-featured__category">Infrastructures</div>
           <h2 id="news-featured-title" class="news-featured__title">Vitogaz inaugure un nouveau terminal de stockage à Toamasina avec une capacité portée à 8 000 tonnes.</h2>
@@ -128,7 +135,7 @@
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.75rem;" role="list">
 
         <article class="news-card animate-on-scroll" role="listitem">
-          <div class="news-card__img" aria-hidden="true">📊</div>
+          <div class="news-card__img" aria-hidden="true"><i data-lucide="bar-chart-2"></i></div>
           <div class="news-card__body">
             <div class="news-card__meta">
               <span class="badge badge--orange">Marchés</span>
@@ -141,7 +148,7 @@
         </article>
 
         <article class="news-card animate-on-scroll animate-delay-1" role="listitem">
-          <div class="news-card__img" aria-hidden="true">🔒</div>
+          <div class="news-card__img" aria-hidden="true"><i data-lucide="lock"></i></div>
           <div class="news-card__body">
             <div class="news-card__meta">
               <span class="badge badge--navy">Sécurité</span>
@@ -154,7 +161,7 @@
         </article>
 
         <article class="news-card animate-on-scroll animate-delay-2" role="listitem">
-          <div class="news-card__img" aria-hidden="true">🤝</div>
+          <div class="news-card__img" aria-hidden="true"><i data-lucide="handshake"></i></div>
           <div class="news-card__body">
             <div class="news-card__meta">
               <span class="badge badge--orange">Partenariats</span>
@@ -167,7 +174,7 @@
         </article>
 
         <article class="news-card animate-on-scroll" role="listitem">
-          <div class="news-card__img" aria-hidden="true">🌿</div>
+          <div class="news-card__img" aria-hidden="true"><i data-lucide="leaf"></i></div>
           <div class="news-card__body">
             <div class="news-card__meta">
               <span class="badge badge--orange">RSE</span>
@@ -180,7 +187,7 @@
         </article>
 
         <article class="news-card animate-on-scroll animate-delay-1" role="listitem">
-          <div class="news-card__img" aria-hidden="true">🎓</div>
+          <div class="news-card__img" aria-hidden="true"><i data-lucide="graduation-cap"></i></div>
           <div class="news-card__body">
             <div class="news-card__meta">
               <span class="badge badge--navy">Institutionnel</span>
@@ -193,7 +200,7 @@
         </article>
 
         <article class="news-card animate-on-scroll animate-delay-2" role="listitem">
-          <div class="news-card__img" aria-hidden="true">📡</div>
+          <div class="news-card__img" aria-hidden="true"><i data-lucide="radio-tower"></i></div>
           <div class="news-card__body">
             <div class="news-card__meta">
               <span class="badge badge--orange">Innovation</span>
@@ -240,5 +247,8 @@
   </footer>
   <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
   <script src="assets/js/main.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>

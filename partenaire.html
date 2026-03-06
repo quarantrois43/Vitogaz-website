@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="shortcut icon" href="assets/images/mascotte-vitogaz.png" />
   <link rel="icon" type="image/png" sizes="64x64" href="assets/images/mascotte-vitogaz.png" />
+  <style>
+    [data-lucide] { width:1.25em; height:1.25em; vertical-align:middle; stroke-width:1.75; display:inline-block; }
+    .nav__mega-icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .card-service__icon [data-lucide],
+    .rse-card__icon [data-lucide] { width:2rem; height:2rem; }
+    .about__feature-icon [data-lucide],
+    .value-card__icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .contact-info-icon [data-lucide] { width:1.25rem; height:1.25rem; }
+  </style>
 </head>
 <body>
 
@@ -26,7 +35,7 @@
       <button class="nav__menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile" role="dialog" aria-modal="true">
-      <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+      <button class="nav__mobile-close" aria-label="Fermer"><i data-lucide="x"></i></button>
       <a href="index.html" class="nav__mobile-link">Accueil</a>
       <a href="partenaire.html" class="nav__mobile-link">Devenir partenaire</a>
       <a href="contact.html" class="nav__mobile-cta">Nous contacter</a>
@@ -63,37 +72,37 @@
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;" role="list">
 
         <article style="text-align:center;padding:2.5rem 2rem;" class="animate-on-scroll" role="listitem">
-          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true">💰</div>
+          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true"><i data-lucide="banknote"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;margin-bottom:0.75rem;">Marges préférentielles</h3>
           <p style="font-size:0.9rem;color:var(--color-text-secondary);line-height:1.65;">Des remises progressives sur volumes qui vous permettent de construire une activité rentable dès le premier mois.</p>
         </article>
 
         <article style="text-align:center;padding:2.5rem 2rem;" class="animate-on-scroll animate-delay-1" role="listitem">
-          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true">🗺️</div>
+          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true"><i data-lucide="map"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;margin-bottom:0.75rem;">Exclusivité territoriale</h3>
           <p style="font-size:0.9rem;color:var(--color-text-secondary);line-height:1.65;">Pour les partenaires exclusifs, protection de zone garantie contractuellement. Aucun autre distributeur Vitogaz agréé dans votre territoire.</p>
         </article>
 
         <article style="text-align:center;padding:2.5rem 2rem;" class="animate-on-scroll animate-delay-2" role="listitem">
-          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true">🎓</div>
+          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true"><i data-lucide="graduation-cap"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;margin-bottom:0.75rem;">Formation certifiante</h3>
           <p style="font-size:0.9rem;color:var(--color-text-secondary);line-height:1.65;">Formation sécurité gaz pour vos équipes, prise en charge par Vitogaz. Certification valable 3 ans et reconnue au niveau national.</p>
         </article>
 
         <article style="text-align:center;padding:2.5rem 2rem;" class="animate-on-scroll" role="listitem">
-          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true">📦</div>
+          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true"><i data-lucide="package"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;margin-bottom:0.75rem;">Approvisionnement prioritaire</h3>
           <p style="font-size:0.9rem;color:var(--color-text-secondary);line-height:1.65;">Accès prioritaire aux stocks en période de tension. Livraison sous 48h garantie pour les partenaires agréés, quelle que soit la situation du marché.</p>
         </article>
 
         <article style="text-align:center;padding:2.5rem 2rem;" class="animate-on-scroll animate-delay-1" role="listitem">
-          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true">🖥️</div>
+          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true"><i data-lucide="monitor"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;margin-bottom:0.75rem;">Outils de gestion dédiés</h3>
           <p style="font-size:0.9rem;color:var(--color-text-secondary);line-height:1.65;">Accès au portail partenaire : commande en ligne, suivi des stocks, historique de livraisons, espace factures et reporting commercial.</p>
         </article>
 
         <article style="text-align:center;padding:2.5rem 2rem;" class="animate-on-scroll animate-delay-2" role="listitem">
-          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true">🎨</div>
+          <div style="width:72px;height:72px;border-radius:50%;background:var(--color-navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.75rem;" aria-hidden="true"><i data-lucide="palette"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.125rem;margin-bottom:0.75rem;">Support marketing & PLV</h3>
           <p style="font-size:0.9rem;color:var(--color-text-secondary);line-height:1.65;">Panneaux de signalétique, supports PLV, matériaux de communication personnalisés à votre enseigne, livrés sur votre point de vente.</p>
         </article>
@@ -123,10 +132,10 @@
           <div style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.25rem;">Engagement minimum</div>
           <div style="font-size:1.5rem;font-weight:800;color:#CD7F32;margin-bottom:1.5rem;">2 T / mois</div>
           <ul style="flex:1;display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;">
-            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:#CD7F32;font-weight:700;">✓</span> Accès aux tarifs revendeurs</li>
-            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:#CD7F32;font-weight:700;">✓</span> Formation sécurité de base (2j)</li>
-            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:#CD7F32;font-weight:700;">✓</span> PLV point de vente standard</li>
-            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:#CD7F32;font-weight:700;">✓</span> Accès portail partenaire</li>
+            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:#CD7F32;font-weight:700;"><i data-lucide="check"></i></span> Accès aux tarifs revendeurs</li>
+            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:#CD7F32;font-weight:700;"><i data-lucide="check"></i></span> Formation sécurité de base (2j)</li>
+            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:#CD7F32;font-weight:700;"><i data-lucide="check"></i></span> PLV point de vente standard</li>
+            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:#CD7F32;font-weight:700;"><i data-lucide="check"></i></span> Accès portail partenaire</li>
             <li style="font-size:0.875rem;color:var(--color-gray-400);display:flex;gap:0.5rem;"><span>○</span> Exclusivité territoriale</li>
             <li style="font-size:0.875rem;color:var(--color-gray-400);display:flex;gap:0.5rem;"><span>○</span> Responsable de compte dédié</li>
           </ul>
@@ -143,11 +152,11 @@
           <div style="font-family:var(--font-display);font-weight:700;color:rgba(255,255,255,0.6);margin-bottom:0.25rem;">Engagement minimum</div>
           <div style="font-size:1.5rem;font-weight:800;color:#C0C0C0;margin-bottom:1.5rem;">8 T / mois</div>
           <ul style="flex:1;display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;">
-            <li style="font-size:0.875rem;color:rgba(255,255,255,0.8);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Tous les avantages Bronze</li>
-            <li style="font-size:0.875rem;color:rgba(255,255,255,0.8);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Remises supplémentaires +3%</li>
-            <li style="font-size:0.875rem;color:rgba(255,255,255,0.8);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Formation avancée (5j)</li>
-            <li style="font-size:0.875rem;color:rgba(255,255,255,0.8);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Exclusivité zonale partielle</li>
-            <li style="font-size:0.875rem;color:rgba(255,255,255,0.8);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Accès stock prioritaire</li>
+            <li style="font-size:0.875rem;color:rgba(255,255,255,0.8);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Tous les avantages Bronze</li>
+            <li style="font-size:0.875rem;color:rgba(255,255,255,0.8);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Remises supplémentaires +3%</li>
+            <li style="font-size:0.875rem;color:rgba(255,255,255,0.8);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Formation avancée (5j)</li>
+            <li style="font-size:0.875rem;color:rgba(255,255,255,0.8);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Exclusivité zonale partielle</li>
+            <li style="font-size:0.875rem;color:rgba(255,255,255,0.8);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Accès stock prioritaire</li>
             <li style="font-size:0.875rem;color:rgba(255,255,255,0.5);display:flex;gap:0.5rem;"><span>○</span> Responsable de compte dédié</li>
           </ul>
           <a href="#candidature" class="btn btn--primary">Devenir Partenaire Argent</a>
@@ -162,12 +171,12 @@
           <div style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.25rem;">Engagement minimum</div>
           <div style="font-size:1.5rem;font-weight:800;color:var(--color-orange);margin-bottom:1.5rem;">20 T / mois</div>
           <ul style="flex:1;display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;">
-            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Tous les avantages Argent</li>
-            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Remises maximales +7%</li>
-            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Exclusivité zonale totale</li>
-            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Responsable compte dédié</li>
-            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Co-branding marketing</li>
-            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;">✓</span> Participation conventions nationales</li>
+            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Tous les avantages Argent</li>
+            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Remises maximales +7%</li>
+            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Exclusivité zonale totale</li>
+            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Responsable compte dédié</li>
+            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Co-branding marketing</li>
+            <li style="font-size:0.875rem;color:var(--color-text-secondary);display:flex;gap:0.5rem;"><span style="color:var(--color-orange);font-weight:700;"><i data-lucide="check"></i></span> Participation conventions nationales</li>
           </ul>
           <a href="#candidature" class="btn btn--primary">Rejoindre le niveau Or</a>
         </article>
@@ -257,11 +266,14 @@
       <div><div class="footer__brand-logo"><img src="assets/images/logo-vitogaz.png" alt="Vitogaz Madagascar" style="height:48px;width:auto;display:block;margin-bottom:0.5rem;filter:brightness(0) invert(1);" /></div><p class="footer__brand-desc">Leader de la distribution de gaz à Madagascar depuis 2003.</p></div>
       <div><div class="footer__nav-title">Groupe</div><ul class="footer__nav-list"><li><a href="groupe.html" class="footer__nav-link">Notre histoire</a></li><li><a href="rse.html" class="footer__nav-link">RSE & ESG</a></li></ul></div>
       <div><div class="footer__nav-title">Partenaires</div><ul class="footer__nav-list"><li><a href="partenaire.html" class="footer__nav-link">Devenir distributeur</a></li><li><a href="solutions.html#distribution" class="footer__nav-link">Programme distribution</a></li></ul></div>
-      <div><div class="footer__nav-title">Contact</div><ul class="footer__nav-list"><li><a href="contact.html" class="footer__nav-link">Nous contacter</a></li><li><a href="mailto:reseau@vitogaz.mg" class="footer__nav-link">reseau@vitogaz.mg</a></li></ul></div>
+      <div><div class="footer__nav-title">Contact</div><ul class="footer__nav-list"><li><a href="contact.html" class="footer__nav-link">Nous contacter</a></li><li><a href="/cdn-cgi/l/email-protection#6c1e091f090d192c1a0518030b0d1642010b" class="footer__nav-link"><span class="__cf_email__" data-cfemail="2c5e495f494d596c5a4558434b4d5602414b">[email&#160;protected]</span></a></li></ul></div>
     </div></div></div>
     <div class="container"><div class="footer__bottom"><p class="footer__copyright">&copy; <span id="footer-year">2024</span> Vitogaz Madagascar.</p><nav class="footer__legal"><a href="#" class="footer__legal-link">Mentions légales</a></nav></div></div>
   </footer>
   <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
   <script src="assets/js/main.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>

@@ -26,6 +26,12 @@
     .value-card__title { font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.5rem; }
     .value-card__text { font-size:0.875rem;color:var(--color-text-secondary);line-height:1.65; }
   </style>
+  <style>
+    [data-lucide] { width:1.25em; height:1.25em; vertical-align:middle; stroke-width:1.75; display:inline-block; }
+    .nav__mega-icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .value-card__icon [data-lucide] { width:1.75rem; height:1.75rem; }
+    .contact-info-icon [data-lucide] { width:1.25rem; height:1.25rem; }
+  </style>
 </head>
 <body>
 
@@ -44,7 +50,7 @@
       <button class="nav__menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile" role="dialog" aria-modal="true">
-      <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+      <button class="nav__mobile-close" aria-label="Fermer"><i data-lucide="x"></i></button>
       <a href="index.html" class="nav__mobile-link">Accueil</a>
       <a href="carrieres.html" class="nav__mobile-link">Carrières</a>
       <a href="contact.html" class="nav__mobile-cta">Nous contacter</a>
@@ -76,22 +82,22 @@
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;" role="list">
         <div class="value-card animate-on-scroll" role="listitem">
-          <span class="value-card__icon" aria-hidden="true">📈</span>
+          <span class="value-card__icon" aria-hidden="true"><i data-lucide="trending-up"></i></span>
           <div class="value-card__title">Plan de carrière structuré</div>
           <p class="value-card__text">Chaque collaborateur dispose d'un plan de développement individuel revu annuellement avec son manager et les RH.</p>
         </div>
         <div class="value-card animate-on-scroll animate-delay-1" role="listitem">
-          <span class="value-card__icon" aria-hidden="true">🎓</span>
+          <span class="value-card__icon" aria-hidden="true"><i data-lucide="graduation-cap"></i></span>
           <div class="value-card__title">Formation continue</div>
           <p class="value-card__text">Budget formation annuel garanti, accès aux certifications professionnelles, financement de formations à l'étranger pour les cadres.</p>
         </div>
         <div class="value-card animate-on-scroll animate-delay-2" role="listitem">
-          <span class="value-card__icon" aria-hidden="true">🏥</span>
+          <span class="value-card__icon" aria-hidden="true"><i data-lucide="stethoscope"></i></span>
           <div class="value-card__title">Couverture sociale premium</div>
           <p class="value-card__text">Mutuelle santé étendue à la famille, prévoyance, médecin du travail et assistance psychologique confidentielle.</p>
         </div>
         <div class="value-card animate-on-scroll animate-delay-3" role="listitem">
-          <span class="value-card__icon" aria-hidden="true">⚖️</span>
+          <span class="value-card__icon" aria-hidden="true"><i data-lucide="scale"></i></span>
           <div class="value-card__title">Équilibre vie pro/perso</div>
           <p class="value-card__text">Horaires flexibles pour les postes compatibles, télétravail partiel pour les fonctions supports, conges familiaux renforcés.</p>
         </div>
@@ -135,7 +141,7 @@
       <div style="display:flex;flex-direction:column;gap:1.25rem;" role="list">
 
         <article class="job-card animate-on-scroll" role="listitem">
-          <div class="job-card__icon" aria-hidden="true">⚙️</div>
+          <div class="job-card__icon" aria-hidden="true"><i data-lucide="settings"></i></div>
           <div style="flex:1;">
             <h3 class="job-card__title">Ingénieur HSE Senior</h3>
             <div class="job-card__meta">
@@ -149,7 +155,7 @@
         </article>
 
         <article class="job-card animate-on-scroll animate-delay-1" role="listitem">
-          <div class="job-card__icon" aria-hidden="true">📊</div>
+          <div class="job-card__icon" aria-hidden="true"><i data-lucide="bar-chart-2"></i></div>
           <div style="flex:1;">
             <h3 class="job-card__title">Responsable Grands Comptes BtoB</h3>
             <div class="job-card__meta">
@@ -163,7 +169,7 @@
         </article>
 
         <article class="job-card animate-on-scroll animate-delay-2" role="listitem">
-          <div class="job-card__icon" aria-hidden="true">🚛</div>
+          <div class="job-card__icon" aria-hidden="true"><i data-lucide="truck"></i></div>
           <div style="flex:1;">
             <h3 class="job-card__title">Chef d'Exploitation Logistique — Toamasina</h3>
             <div class="job-card__meta">
@@ -177,7 +183,7 @@
         </article>
 
         <article class="job-card animate-on-scroll" role="listitem">
-          <div class="job-card__icon" aria-hidden="true">💻</div>
+          <div class="job-card__icon" aria-hidden="true"><i data-lucide="laptop"></i></div>
           <div style="flex:1;">
             <h3 class="job-card__title">Responsable Systèmes d'Information</h3>
             <div class="job-card__meta">
@@ -191,7 +197,7 @@
         </article>
 
         <article class="job-card animate-on-scroll animate-delay-1" role="listitem">
-          <div class="job-card__icon" aria-hidden="true">📋</div>
+          <div class="job-card__icon" aria-hidden="true"><i data-lucide="clipboard-list"></i></div>
           <div style="flex:1;">
             <h3 class="job-card__title">Contrôleur de Gestion</h3>
             <div class="job-card__meta">
@@ -222,11 +228,14 @@
       <div><div class="footer__brand-logo"><img src="assets/images/logo-vitogaz.png" alt="Vitogaz Madagascar" style="height:48px;width:auto;display:block;margin-bottom:0.5rem;filter:brightness(0) invert(1);" /></div><p class="footer__brand-desc">Leader de la distribution de gaz à Madagascar depuis 2003.</p></div>
       <div><div class="footer__nav-title">Groupe</div><ul class="footer__nav-list"><li><a href="groupe.html" class="footer__nav-link">Notre histoire</a></li><li><a href="rse.html" class="footer__nav-link">RSE & ESG</a></li><li><a href="carrieres.html" class="footer__nav-link">Carrières</a></li></ul></div>
       <div><div class="footer__nav-title">Solutions</div><ul class="footer__nav-list"><li><a href="solutions.html" class="footer__nav-link">Nos solutions</a></li><li><a href="securite.html" class="footer__nav-link">Sécurité</a></li></ul></div>
-      <div><div class="footer__nav-title">Contact</div><ul class="footer__nav-list"><li><a href="contact.html" class="footer__nav-link">Nous contacter</a></li><li><a href="mailto:rh@vitogaz.mg" class="footer__nav-link">rh@vitogaz.mg</a></li></ul></div>
+      <div><div class="footer__nav-title">Contact</div><ul class="footer__nav-list"><li><a href="contact.html" class="footer__nav-link">Nous contacter</a></li><li><a href="/cdn-cgi/l/email-protection#99ebf1d9eff0edf6fef8e3b7f4fe" class="footer__nav-link"><span class="__cf_email__" data-cfemail="512339112738253e36302b7f3c36">[email&#160;protected]</span></a></li></ul></div>
     </div></div></div>
     <div class="container"><div class="footer__bottom"><p class="footer__copyright">&copy; <span id="footer-year">2024</span> Vitogaz Madagascar.</p><nav class="footer__legal"><a href="#" class="footer__legal-link">Mentions légales</a></nav></div></div>
   </footer>
   <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
   <script src="assets/js/main.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
