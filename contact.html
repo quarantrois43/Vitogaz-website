@@ -6,7 +6,19 @@
   <meta name="description" content="Vitogaz Madagascar — Contact & Demande de devis. Contactez nos équipes commerciales pour une offre personnalisée sous 48h." />
   <title>Contact & Devis — Vitogaz Madagascar</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'><rect width='42' height='42' rx='8' fill='%23006B60'/><text x='21' y='29' font-family='Arial Black,sans-serif' font-size='22' font-weight='900' fill='white' text-anchor='middle'>V</text><line x1='4' y1='37' x2='38' y2='37' stroke='%23E31E24' stroke-width='3' stroke-linecap='round'/></svg>" />
+  <link rel="shortcut icon" href="assets/images/mascotte-vitogaz.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/mascotte-vitogaz.png" />
+  <style>
+    [data-lucide] { width:1.25em; height:1.25em; vertical-align:middle; stroke-width:1.75; display:inline-block; }
+    .nav__mega-icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .card-service__icon [data-lucide],
+    .rse-card__icon [data-lucide],
+    .esg-pillar__icon [data-lucide] { width:2rem; height:2rem; }
+    .about__feature-icon [data-lucide],
+    .security__certif-badge [data-lucide],
+    .value-card__icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .contact-info-icon [data-lucide] { width:1.25rem; height:1.25rem; }
+  </style>
 </head>
 <body>
 
@@ -25,7 +37,7 @@
       <button class="nav__menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile" role="dialog" aria-modal="true">
-      <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+      <button class="nav__mobile-close" aria-label="Fermer"><i data-lucide="x"></i></button>
       <a href="index.html" class="nav__mobile-link">Accueil</a>
       <a href="groupe.html" class="nav__mobile-link">Groupe</a>
       <a href="solutions.html" class="nav__mobile-link">Solutions BtoB</a>
@@ -171,7 +183,7 @@
             </button>
 
             <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:1rem;">
-              🔒 Vos données sont traitées en toute confidentialité et ne seront jamais partagées avec des tiers à des fins commerciales.
+              <i data-lucide="lock"></i> Vos données sont traitées en toute confidentialité et ne seront jamais partagées avec des tiers à des fins commerciales.
             </p>
 
           </form>
@@ -186,7 +198,7 @@
               <div style="font-family:var(--font-display);font-weight:700;color:white;font-size:1.0625rem;margin-bottom:1.5rem;">Contact direct</div>
               <div class="contact-info">
                 <div class="contact-info-item">
-                  <div class="contact-info-icon" aria-hidden="true">📞</div>
+                  <div class="contact-info-icon" aria-hidden="true"><i data-lucide="phone"></i></div>
                   <div>
                     <div class="contact-info-title">Téléphone</div>
                     <a href="tel:+261200000000" class="contact-info-value" style="color:rgba(255,255,255,0.8);">+261 20 XX XX XX</a>
@@ -194,14 +206,14 @@
                   </div>
                 </div>
                 <div class="contact-info-item">
-                  <div class="contact-info-icon" aria-hidden="true">✉️</div>
+                  <div class="contact-info-icon" aria-hidden="true"><i data-lucide="mail"></i></div>
                   <div>
                     <div class="contact-info-title">Email commercial</div>
-                    <a href="mailto:commercial@vitogaz.mg" class="contact-info-value" style="color:rgba(255,255,255,0.8);">commercial@vitogaz.mg</a>
+                    <a href="/cdn-cgi/l/email-protection#3d5e525050584f5e545c517d4b5449525a5c4713505a" class="contact-info-value" style="color:rgba(255,255,255,0.8);"><span class="__cf_email__" data-cfemail="1b787476767e6978727a775b6d726f747c7a6135767c">[email&#160;protected]</span></a>
                   </div>
                 </div>
                 <div class="contact-info-item">
-                  <div class="contact-info-icon" aria-hidden="true">📍</div>
+                  <div class="contact-info-icon" aria-hidden="true"><i data-lucide="map-pin"></i></div>
                   <div>
                     <div class="contact-info-title">Siège social</div>
                     <div class="contact-info-value" style="color:rgba(255,255,255,0.8);">Lot II M 85<br/>Antanimena<br/>101 Antananarivo</div>
@@ -212,7 +224,7 @@
 
             <!-- Urgences -->
             <div style="background:rgba(232,130,12,0.1);border:1px solid rgba(232,130,12,0.3);border-radius:var(--radius-xl);padding:2rem;margin-bottom:1.5rem;">
-              <div style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.0625rem;margin-bottom:0.75rem;">🚨 Urgences 24h/7j</div>
+              <div style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);font-size:1.0625rem;margin-bottom:0.75rem;"><i data-lucide="siren"></i> Urgences 24h/7j</div>
               <p style="font-size:0.875rem;color:var(--color-text-secondary);margin-bottom:1rem;">Pour toute urgence opérationnelle ou sécurité :</p>
               <a href="tel:+261320000000" style="font-family:var(--font-display);font-weight:800;color:var(--color-orange);font-size:1.375rem;display:block;">+261 32 XX XX XX</a>
               <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:0.5rem;">Astreinte sécurité disponible 365j/an</p>
@@ -235,7 +247,7 @@
                   <div style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.5;padding-top:4px;"><strong style="color:var(--color-navy);">Un expert</strong> vous appelle pour un entretien de qualification</div>
                 </div>
                 <div style="display:flex;gap:0.875rem;align-items:flex-start;">
-                  <div style="width:28px;height:28px;border-radius:50%;background:var(--color-success);display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:0.75rem;flex-shrink:0;">✓</div>
+                  <div style="width:28px;height:28px;border-radius:50%;background:var(--color-success);display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:0.75rem;flex-shrink:0;"><i data-lucide="check"></i></div>
                   <div style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.5;padding-top:4px;"><strong style="color:var(--color-navy);">Vous recevez</strong> votre offre personnalisée sous 48h</div>
                 </div>
               </div>
@@ -293,16 +305,15 @@
       </div>
     </div>
   </section>
+  <!-- FOOTER -->
+  <div id="footer-root"></div>
+  <script src="assets/js/footer.js"></script>
 
-  <footer class="footer" role="contentinfo">
-    <div class="footer__top"><div class="container"><div class="footer__grid">
-      <div><div class="footer__brand-logo"><img src="assets/images/logo-vitogaz.png" alt="Vitogaz Madagascar" style="height:48px;width:auto;display:block;margin-bottom:0.5rem;filter:brightness(0) invert(1);" /></div><p class="footer__brand-desc">Leader de la distribution de gaz à Madagascar depuis 2003.</p><div class="footer__certifications" style="margin-top:1.5rem;"><span class="footer__cert-badge">ISO 9001</span><span class="footer__cert-badge">ADR</span><span class="footer__cert-badge">ATEX</span></div></div>
-      <div><div class="footer__nav-title">Groupe</div><ul class="footer__nav-list"><li><a href="groupe.html" class="footer__nav-link">Notre histoire</a></li><li><a href="rse.html" class="footer__nav-link">RSE & ESG</a></li><li><a href="carrieres.html" class="footer__nav-link">Carrières</a></li></ul></div>
-      <div><div class="footer__nav-title">Solutions</div><ul class="footer__nav-list"><li><a href="solutions.html" class="footer__nav-link">Toutes nos solutions</a></li><li><a href="securite.html" class="footer__nav-link">Sécurité</a></li><li><a href="logistique.html" class="footer__nav-link">Logistique</a></li></ul></div>
-      <div><div class="footer__nav-title">Contact</div><ul class="footer__nav-list"><li><a href="mailto:contact@vitogaz.mg" class="footer__nav-link">contact@vitogaz.mg</a></li><li><a href="tel:+261200000000" class="footer__nav-link">+261 20 XX XX XX</a></li><li><a href="tel:+261320000000" class="footer__nav-link" style="color:var(--color-orange);font-weight:600;">Urgences 24/7</a></li></ul></div>
-    </div></div></div>
-    <div class="container"><div class="footer__bottom"><p class="footer__copyright">&copy; <span id="footer-year">2024</span> Vitogaz Madagascar. Tous droits réservés.</p><nav class="footer__legal"><a href="#" class="footer__legal-link">Mentions légales</a><a href="#" class="footer__legal-link">Confidentialité</a><a href="#" class="footer__legal-link">CGV</a></nav></div></div>
-  </footer>
+  <script src="assets/js/main.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
+
   <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
   <script src="assets/js/main.js"></script>
 </body>

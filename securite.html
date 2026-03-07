@@ -6,7 +6,8 @@
   <meta name="description" content="Vitogaz Madagascar — Sécurité & Conformité. Notre politique HSE, certifications internationales et standards de sécurité en matière de distribution de gaz." />
   <title>Sécurité & Conformité — Vitogaz Madagascar</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'><rect width='42' height='42' rx='8' fill='%23006B60'/><text x='21' y='29' font-family='Arial Black,sans-serif' font-size='22' font-weight='900' fill='white' text-anchor='middle'>V</text><line x1='4' y1='37' x2='38' y2='37' stroke='%23E31E24' stroke-width='3' stroke-linecap='round'/></svg>" />
+  <link rel="shortcut icon" href="assets/images/mascotte-vitogaz.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/mascotte-vitogaz.png" />
   <style>
     .certif-card {
       background:white;border:1px solid var(--color-gray-200);border-radius:var(--radius-xl);
@@ -28,6 +29,18 @@
       font-size:1.125rem;flex-shrink:0;
     }
   </style>
+  <style>
+    [data-lucide] { width:1.25em; height:1.25em; vertical-align:middle; stroke-width:1.75; display:inline-block; }
+    .nav__mega-icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .card-service__icon [data-lucide],
+    .rse-card__icon [data-lucide],
+    .esg-pillar__icon [data-lucide] { width:2rem; height:2rem; }
+    .about__feature-icon [data-lucide],
+    .security__certif-badge [data-lucide],
+    .value-card__icon [data-lucide] { width:1.5rem; height:1.5rem; }
+    .card-industry__icon [data-lucide] { width:2.5rem; height:2.5rem; stroke:#fff; }
+    .contact-info-icon [data-lucide] { width:1.25rem; height:1.25rem; }
+  </style>
 </head>
 <body>
 
@@ -48,7 +61,7 @@
       <button class="nav__menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
     <div class="nav__mobile" role="dialog" aria-modal="true">
-      <button class="nav__mobile-close" aria-label="Fermer">✕</button>
+      <button class="nav__mobile-close" aria-label="Fermer"><i data-lucide="x"></i></button>
       <a href="index.html" class="nav__mobile-link">Accueil</a>
       <a href="groupe.html" class="nav__mobile-link">Groupe</a>
       <a href="solutions.html" class="nav__mobile-link">Solutions BtoB</a>
@@ -170,7 +183,7 @@
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;" role="list">
 
         <article class="certif-card animate-on-scroll" role="listitem">
-          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true">🏅</div>
+          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true"><i data-lucide="award"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.5rem;">ISO 9001:2015</h3>
           <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.65;margin-bottom:1rem;">Système de management de la qualité. Couvre l'ensemble de nos processus : commande, stockage, livraison, SAV et facturation.</p>
           <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--color-text-muted);">
@@ -180,7 +193,7 @@
         </article>
 
         <article class="certif-card animate-on-scroll animate-delay-1" role="listitem">
-          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true">⚠️</div>
+          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true"><i data-lucide="alert-triangle"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.5rem;">ISO 45001 / OHSAS 18001</h3>
           <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.65;margin-bottom:1rem;">Management de la santé et de la sécurité au travail. Couvre la prévention des accidents, la gestion des incidents et les conditions de travail.</p>
           <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--color-text-muted);">
@@ -190,7 +203,7 @@
         </article>
 
         <article class="certif-card animate-on-scroll animate-delay-2" role="listitem">
-          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true">🚛</div>
+          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true"><i data-lucide="truck"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.5rem;">ADR — Transport MD</h3>
           <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.65;margin-bottom:1rem;">Conformité transport routier de marchandises dangereuses. Tous nos chauffeurs sont titulaires du certificat ADR classe 2 (gaz). Véhicules conformes ADR.</p>
           <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--color-text-muted);">
@@ -200,7 +213,7 @@
         </article>
 
         <article class="certif-card animate-on-scroll" role="listitem">
-          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true">⚡</div>
+          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true"><i data-lucide="zap"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.5rem;">Conformité ATEX</h3>
           <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.65;margin-bottom:1rem;">Atmosphères explosibles — zones ATEX 0, 1 et 2. Équipements certifiés EEx, personnels habilités, classifications des zones documentées et révisées.</p>
           <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--color-text-muted);">
@@ -210,7 +223,7 @@
         </article>
 
         <article class="certif-card animate-on-scroll animate-delay-1" role="listitem">
-          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true">🏛</div>
+          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true"><i data-lucide="landmark"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.5rem;">Agrément Ministère de l'Énergie</h3>
           <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.65;margin-bottom:1rem;">Autorisation officielle de l'État malagasy pour l'importation, le stockage, le conditionnement et la distribution des gaz de pétrole liquéfiés.</p>
           <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--color-text-muted);">
@@ -220,7 +233,7 @@
         </article>
 
         <article class="certif-card animate-on-scroll animate-delay-2" role="listitem">
-          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true">🔬</div>
+          <div style="font-size:2rem;margin-bottom:1rem;" aria-hidden="true"><i data-lucide="microscope"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:var(--color-navy);margin-bottom:0.5rem;">Contrôle Qualité Produits</h3>
           <p style="font-size:0.875rem;color:var(--color-text-secondary);line-height:1.65;margin-bottom:1rem;">Chaque livraison fait l'objet d'un contrôle de pureté et de conformité du produit. Traçabilité lot par lot depuis l'importation jusqu'au client final.</p>
           <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--color-text-muted);">
@@ -244,18 +257,18 @@
       </div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;" class="animate-on-scroll">
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-xl);padding:2rem;">
-          <div style="font-size:2rem;margin-bottom:1rem;">🚨</div>
+          <div style="font-size:2rem;margin-bottom:1rem;"><i data-lucide="siren"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:white;margin-bottom:0.75rem;">Numéro d'urgence 24/7</h3>
           <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);line-height:1.65;">Une astreinte sécurité est opérationnelle 365 jours par an, 24h/24. Intervention sur site garantie sous 2h dans la zone d'Antananarivo.</p>
           <a href="tel:+261320000000" style="color:var(--color-orange);font-weight:700;display:block;margin-top:1rem;font-family:var(--font-display);">+261 32 XX XX XX</a>
         </div>
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-xl);padding:2rem;">
-          <div style="font-size:2rem;margin-bottom:1rem;">📋</div>
+          <div style="font-size:2rem;margin-bottom:1rem;"><i data-lucide="clipboard-list"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:white;margin-bottom:0.75rem;">Plan d'Opération Interne</h3>
           <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);line-height:1.65;">Chaque dépôt dispose d'un POI validé par les autorités, révisé annuellement et exercé deux fois par an avec simulation complète.</p>
         </div>
         <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-xl);padding:2rem;">
-          <div style="font-size:2rem;margin-bottom:1rem;">🤝</div>
+          <div style="font-size:2rem;margin-bottom:1rem;"><i data-lucide="handshake"></i></div>
           <h3 style="font-family:var(--font-display);font-weight:700;color:white;margin-bottom:0.75rem;">Coordination SAPEURS-POMPIERS</h3>
           <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);line-height:1.65;">Conventions signées avec les services de sécurité civile dans chaque région d'implantation. Sessions d'information annuelles avec les équipes pompiers.</p>
         </div>
@@ -274,17 +287,13 @@
       </div>
     </div>
   </section>
+<!-- FOOTER -->
+  <div id="footer-root"></div>
+  <script src="assets/js/footer.js"></script>
 
-  <footer class="footer" role="contentinfo">
-    <div class="footer__top"><div class="container"><div class="footer__grid">
-      <div><div class="footer__brand-logo"><img src="assets/images/logo-vitogaz.png" alt="Vitogaz Madagascar" style="height:48px;width:auto;display:block;margin-bottom:0.5rem;filter:brightness(0) invert(1);" /></div><p class="footer__brand-desc">Leader de la distribution de gaz à Madagascar depuis 2003.</p><div class="footer__certifications" style="margin-top:1.5rem;"><span class="footer__cert-badge">ISO 9001</span><span class="footer__cert-badge">OHSAS 18001</span><span class="footer__cert-badge">ADR</span><span class="footer__cert-badge">ATEX</span></div></div>
-      <div><div class="footer__nav-title">Groupe</div><ul class="footer__nav-list"><li><a href="groupe.html" class="footer__nav-link">Notre histoire</a></li><li><a href="rse.html" class="footer__nav-link">RSE & ESG</a></li><li><a href="carrieres.html" class="footer__nav-link">Carrières</a></li></ul></div>
-      <div><div class="footer__nav-title">Solutions</div><ul class="footer__nav-list"><li><a href="solutions.html" class="footer__nav-link">Toutes les solutions</a></li><li><a href="logistique.html" class="footer__nav-link">Logistique</a></li></ul></div>
-      <div><div class="footer__nav-title">Contact</div><ul class="footer__nav-list"><li><a href="contact.html" class="footer__nav-link">Demander un devis</a></li><li><a href="tel:+261320000000" class="footer__nav-link" style="color:var(--color-orange);font-weight:600;">Urgences 24/7</a></li></ul></div>
-    </div></div></div>
-    <div class="container"><div class="footer__bottom"><p class="footer__copyright">&copy; <span id="footer-year">2024</span> Vitogaz Madagascar.</p><nav class="footer__legal"><a href="#" class="footer__legal-link">Mentions légales</a><a href="#" class="footer__legal-link">Confidentialité</a></nav></div></div>
-  </footer>
-  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
   <script src="assets/js/main.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
